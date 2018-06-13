@@ -5,9 +5,9 @@
           <canvas ref="canvas" id="canvas" style="background: rgba(255,255,155,0)">你的浏览器不支持canvas</canvas>
       </div>
       <div class="wrap">
-        <div class="banner-title">Join Seele</div>
+        <div class="banner-title">Seele<br>Blockchain 4.0</div>
         <div class="banner-des">
-            Open the New Era for the Internet of Value
+            Building the Internet of Value for the future.
         </div>
         <!-- <iframe class="show-sm banner-video-sm" width="300" height="300" src="https://www.youtube.com/embed/j8lPvUGySwo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         <!-- <div class="watch-video show-lg" @click="dialogTableVisible = true">Watch Video</div> -->

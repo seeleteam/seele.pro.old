@@ -41,20 +41,20 @@ export default {
     return {
       layout: [
         {
-          spanHead: 'Headquarters in San Francisco, USA &nbsp;',
-          spanEnd: 'Seele algorithm development team and academic research cooperation.'
+          spanHead: 'HQ San Francisco, USA',
+          spanEnd: 'Our headquarters. Algorithm development and research.'
         },
         {
-          spanHead: 'Shenzhen, China Branch &nbsp;',
-          spanEnd: 'Seele engineering team & eco-service development team.'
+          spanHead: 'Shenzhen, China',
+          spanEnd: 'Engineering and ecosystem development.'
         },
         {
-          spanHead: 'London, UK Branch &nbsp;',
-          spanEnd: 'Seele application and eco-service (in progress).'
+          spanHead: 'London, UK',
+          spanEnd: 'Application and ecosystem development .'
         },
         {
-          spanHead: 'Singapore Branch &nbsp;',
-          spanEnd: 'Seele graph computation development team (in progress).'
+          spanHead: 'Singapore',
+          spanEnd: 'Graph computing research team. (In progress).'
         },
         // 'Headquarter in San Francisco, USA - Seele algorithm development team and academic research cooperation.',
         // 'Shenzhen, China Branch - Seele engineering team & Eco-service development team.',
@@ -75,6 +75,7 @@ export default {
         li {
           font-size: 16px;
           line-height: 30px;
+
         }
       }
     }
@@ -194,6 +195,21 @@ export default {
   @media screen and (min-width: 900px ) {
     .global {
       min-width: 1160px;
+    }
+    ul{
+      li{
+          .span-end{
+              display: inline-block;
+              width: 405px;
+              text-align: left;
+          }
+          .span-head{
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            margin-right: 1em;
+          }
+      }
     }
   }
 </style>

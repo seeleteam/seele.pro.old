@@ -11,10 +11,7 @@
                 Neural Consensus Algorithm
             </div>
             <div class="feature-item-info">
-                Seele created "Neural Consensus Algorithm". It transforms the consensus problem into an asynchronous request, 
-                processing and sorting data in a large-scale environment based on "micro-real numbers". It will not only ensure 
-                safety and low energy consumption, but it will also ensure strong linear augmenting ability. The performance is linearly
-                accelerated as the node size increases to satisfy business requirements.
+Seele’s neural consensus algorithm was inspired by the inner workings of the human brain. It asynchronously processes and sorts data in a large-scale decentralized environment, using ε-differential agreements to allow all nodes within a network to reach consensus. Compared to existing consensus algorithms, it ensures greater fault-tolerance and is significantly more efficient. Its performance also scales linearly as network size increases, allowing it to be widely adaptable to many different use cases.
             </div>
             <div class="feature-item-icons">
               <div class="feature-item-icons-icon"></div>
@@ -33,7 +30,7 @@
               Heterogeneous Forest Network
             </div>
             <div class="feature-item-info">
-                Heterogeneous forest network is made up of different subnets. Each subnet can be seen as a stratified tree, which can handle the different service scenarios independently and interact with each other through cross-chain protocol.
+Seele proposes the heterogeneous forest network, a blockchain ecosystem comprised of subnets optimized for different use cases. Subnets can handle different service scenarios independently and can interact with each other through cross-chain and cross-domain protocols. This network is secure, efficient, and compatible with current blockchain ecosystems. It presents an overarching vision for the future Internet of Value.
             </div>
             <div class="feature-item-icons">
               <div class="feature-item-icons-icon"></div>

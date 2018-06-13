@@ -79,6 +79,9 @@
         {
           text: 'Announcements',
           id: 4,
+        },{
+          text: 'Developers',
+          id:5
         }
         ],
         menuVisible: false,
@@ -421,7 +424,7 @@
       width: 180px;
       height: 40px;
       margin-top: 30px;
-      margin-right: 160px;
+      margin-right: 60px;
       cursor: pointer;
     }
     .header-item {

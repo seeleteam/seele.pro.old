@@ -35,7 +35,7 @@
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/bitcoin.png" alt="bitcoin"> -->
           </a>
-          <a href="https://www.reddit.com/r/IAmA/comments/7wb5no/this_is_seeleteam_block_chain_40_technologyask_us/" target="_blank">
+          <a href="https://reddit.com/r/seelenetwork" target="_blank">
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/reddit.png" alt="reddit"> -->
           </a>

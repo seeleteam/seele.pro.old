@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="representative">
-          <div class="highlights-text">Representative</div>
+          <div class="highlights-text">Example</div>
           <div v-if="step === 0">
             <img class="representative-img" src="../../assets/imgs/logo/bitc_logo.jpg" alt="image">
           </div>
@@ -118,33 +118,32 @@
           {
             id: 0,
             highLight: [
-              'Transaction ledger'
+              'Ledger of transactions'
             ]
           },
           {
             id: 1,
             highLight: [
-              'Smart contract'
+              'Smart contracts'
             ]
           },
           {
             id: 2,
             highLight: [
-              'High performance',
-              'Advanced governance',
-              'Better consensus',
-              'Large scale business',
-              'Fundamental chain',
-              'Cross chain',
+              "High performance",
+              "Advanced governance",
+              "Improved consensus algorithms",
+              "Large scale applications",
+              "Cross chains"
             ]
           },
           {
             id: 3,
             highLight: [
-            'Heterogeneous Forest Network',
-            'Neural Consensus Algorithm',
-            'Computing sharing between on-chain and off-chain',
-            'Million TPS',
+              "Heterogeneous Forest Network",
+              "Neural Consensus Algorithm",
+              "On-chain and off-chain sharing",
+              "Value internet"
             ]
           },
         ],

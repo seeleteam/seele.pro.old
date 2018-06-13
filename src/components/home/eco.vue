@@ -12,20 +12,23 @@
           </div>
           <div class="layout-2">
             <div class="layout-title">Institution</div>
-            <div class="layout-info">Establishment of labs, alliances, and associations <br>Development of theories, technologies, and standards
+            <div class="layout-info">Establishment of labs, alliances, and associations<br>Research and development of technologies, protocols, and standards
+
                 </div>
             <div class="layout-icon"></div>
           </div>
           <div class="layout-3">
             <div class="layout-title">Enterprise</div>
-            <div class="layout-info">Proactive participation of leading enterprises around the globe
-                <br>Practical application of blockchain technology</div>
+            <div class="layout-info">Proactive collaboration with leading enterprises across the world<br>
+Development of practical blockchain applications for industry
+</div>
             <div class="layout-icon"></div>
           </div>
           <div class="layout-4">
             <div class="layout-title">Developers</div>
-            <div class="layout-info">Fully accessible for all developers in the world
-                <br>Development of Seele tech ecosystem
+            <div class="layout-info">Complete and easy access for developers globally<br>
+                Development of a Seele ecosystem
+
                 </div>
             <div class="layout-icon"></div>
           </div>

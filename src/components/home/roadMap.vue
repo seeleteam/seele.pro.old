@@ -7,7 +7,7 @@
         <div class="step-one step-before">
           <i></i>
           <div class="step-date">2018 Q1</div>
-          <div class="step-info">Minimum feasibility verification</div>
+          <div class="step-info">Minimum feasibility study</div>
         </div>
         <div class="step-two step-before">
           <i></i>
@@ -17,17 +17,17 @@
         <div class="step-three">
           <i></i>
           <div class="step-date">2018 Q3</div>
-          <div class="step-info">Core function test and performance optimization</div>
+          <div class="step-info">Test core functionality and optimize performance</div>
         </div>
         <div class="step-four">
           <i></i>
           <div class="step-date">2018 Q4</div>
-          <div class="step-info">Publish mainnet</div>
+          <div class="step-info">Release public main net</div>
         </div>
         <div class="step-five">
           <i></i>
           <div class="step-date">2019 Q1</div>
-          <div class="step-info">Build application support tools</div>
+          <div class="step-info">Develop application support tools</div>
         </div>
         <!-- <el-tooltip class="item" effect="light" content="tips" placement="top"> -->
           <div class="step-1"></div>
@@ -113,7 +113,7 @@
         roadList: [
           {
             title: '2018 Q1',
-            info: 'Minimum feasibility verification'
+            info: 'Minimum feasibility study'
           },
           {
             title: '2018 Q2',
@@ -121,15 +121,15 @@
           },
           {
             title: '2018 Q3',
-            info: 'Core function test and performance optimization'
+            info: 'Test core functionality and optimize performance'
           },
           {
             title: '2018 Q4',
-            info: 'Publish mainnet'
+            info: 'Release public main net'
           },
           {
             title: '2019 Q1',
-            info: 'Build application support tools'
+            info: 'Develop application support tools'
           },
         ],
         swiperOption: {
