@@ -13,6 +13,8 @@ import newsDetail from '@/components/newsDetail'
 import startHere from '@/components/startHere'
 import stateDetail from '@/components/stateDetail'
 import announcement from '@/components/announcement'
+import developers from '@/components/developers'
+import faucet from '@/components/faucet'
 
 Vue.use(Router)
 
@@ -80,6 +82,14 @@ export default new Router({
       path: '/announcement',
       name: 'announcement',
       component: announcement,
-    },
+    },{
+      path: '/developers',
+      name: 'developers',
+      component:developers
+    },{
+      path: '/faucet',
+      name: 'faucet',
+      component:faucet
+    }
   ]
 })

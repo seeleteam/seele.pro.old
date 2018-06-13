@@ -75,13 +75,13 @@
         {
           text: 'Bounty',
           id: 3,
-        // },{
-        //   text: 'Developers',
-        //   id:4
+        },{
+          text: 'Developers',
+          id:4
         },
         {
           text: 'Announcements',
-          id: 4,
+          id: 5,
         }
         ],
         menuVisible: false,
@@ -395,7 +395,9 @@
         }
         else if (id === 3) {
           window.location.href = 'https://bounty.seele.pro';
-        } else {
+        } else if(id === 4){
+          this.$router.push('/developers')
+        }else if(id === 5){
           this.$router.push('/announcement');
         }
       },
@@ -536,9 +538,12 @@
             margin-left: 10px;
             font-size: 12px;
             flex: 1;
-            &:nth-child(5) {
+            &:last-child {
               margin-top: 5px;
               max-width: 110px;
+            }
+            &:nth-child(1){
+              display: none
             }
           }
         }

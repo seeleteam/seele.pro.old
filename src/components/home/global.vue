@@ -200,7 +200,7 @@ export default {
       li{
           .span-end{
               display: inline-block;
-              width: 405px;
+              width: 420px;
               text-align: left;
           }
           .span-head{
