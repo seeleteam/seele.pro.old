@@ -75,13 +75,13 @@
         {
           text: 'Bounty',
           id: 3,
+        // },{
+        //   text: 'Developers',
+        //   id:4
         },
         {
           text: 'Announcements',
           id: 4,
-        },{
-          text: 'Developers',
-          id:5
         }
         ],
         menuVisible: false,

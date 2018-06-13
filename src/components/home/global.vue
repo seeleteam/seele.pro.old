@@ -208,6 +208,7 @@ export default {
             width: 200px;
             text-align: right;
             margin-right: 1em;
+            font-weight: bold;
           }
       }
     }
