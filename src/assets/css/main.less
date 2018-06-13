@@ -1,0 +1,81 @@
+.wrap {
+  width: 1160px;
+  margin: 0 auto;
+}
+.item-wrap{
+  width: 800px;
+  margin: 0 auto;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.bg-black {
+  background: #202020;
+}
+/* 清除浮动 */
+
+.clear:after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+.clear {
+  zoom: 1;
+}
+
+/* 浮动定义 */
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.box-title {
+  color: #202020;
+  font-size: 30px;
+  margin: 100px 0 40px;
+  text-align: center;
+}
+@baseColor: #1346a2;  
+@media screen and (min-width: 768px ) {
+  .show-sm{
+    display: none;
+  }
+  .show-lg{
+    display: block;
+  }
+}
+@media screen and (max-width: 768px ) {
+  .wrap {
+    width: auto;
+  }
+  .item-wrap{
+    width: auto;
+  }
+  .show-sm{
+    display: block;
+  }
+  .show-lg{
+    display: none;
+  }
+  .box-title {
+    margin: 40px 0 30px;
+  }
+  html,body{
+    overflow:hidden;
+    overflow-y:auto;
+  }
+}
+
