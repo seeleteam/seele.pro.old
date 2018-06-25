@@ -99,8 +99,11 @@
 			color: white;
 			font-family:AvenirLT-Heavy;
 			cursor: pointer;
+			&:hover{
+				opacity: .8
+			}
 			&:active{
-				opacity: .85
+				opacity: .6
 			};
 			@media (max-width: 768px){
 			    width: 12.5rem;

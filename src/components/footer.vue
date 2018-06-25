@@ -43,7 +43,7 @@
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/github.png" alt="github"> -->
           </a>
-          <a href="http://weibo.com/SeeleTech" target="_blank">
+          <a href="https://weibo.com/u/6561132287" target="_blank">
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/xinlang.png" alt="xinlang"> -->
           </a>

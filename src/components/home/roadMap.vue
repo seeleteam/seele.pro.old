@@ -165,8 +165,8 @@
       position: relative;
         
       .step-one ,.step-two, .step-three, .step-four, .step-five {
-        width: 25px;
-        height: 25px;
+        width: 26px;
+        height: 26px;
         background: #fff;
         border-radius: 50%;
         position: absolute;

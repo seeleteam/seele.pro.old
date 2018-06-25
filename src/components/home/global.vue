@@ -50,7 +50,7 @@ export default {
         },
         {
           spanHead: 'London, UK',
-          spanEnd: 'Application and ecosystem development .'
+          spanEnd: 'Application and ecosystem development.'
         },
         {
           spanHead: 'Singapore',

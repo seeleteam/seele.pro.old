@@ -82,14 +82,14 @@ export default new Router({
       path: '/announcement',
       name: 'announcement',
       component: announcement,
-    },{
-      path: '/developers',
-      name: 'developers',
-      component:developers
-    },{
-      path: '/faucet',
-      name: 'faucet',
-      component:faucet
+    // },{
+    //   path: '/developers',
+    //   name: 'developers',
+    //   component:developers
+    // },{
+    //   path: '/faucet',
+    //   name: 'faucet',
+    //   component:faucet
     }
   ]
 })

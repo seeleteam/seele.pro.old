@@ -36,12 +36,14 @@ export default {
     Footer
   },
   mounted() {
-    // let id = window.location.hash
-    //   ? window.location.hash.split("?")[1]
-    //     ? window.location.hash.split("?")[1].split("=")[1]
-    //     : ""
-    //   : "";
     let id = sessionStorage.getItem("newsId")
+    if(id == null || id == "")
+    id = window.location.hash
+      ? window.location.hash.split("?")[1]
+        ? window.location.hash.split("?")[1].split("=")[1]
+        : ""
+      : "";
+     
     this.getNewsDetail(id);
     window.scroll(0, 0);
   },
