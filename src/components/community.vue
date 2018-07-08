@@ -5,7 +5,7 @@
       <community></community>
       <div class="community_main">
         <hgroup class="community_list wrap">
-          <p class="box-title community-title">SOCIAL NETWORKS</p>
+          <p class="box-title community-title">{{$t('community.SN')}}</p>
           <div class="social_icons">
             <a href="https://medium.com/seeletech" target="_blank">
               <span class="community-micon"></span>
@@ -42,13 +42,13 @@
           </div>
           <div class="faq_button_wrap">
             <router-link :to="{path: 'faq'}">
-              <a class="community-button show-lg whitepaper_download" data-title="FAQ">
-                <span><span >FAQ</span></span>
+              <a class="community-button show-lg whitepaper_download" :data-title="$t('community.FAQ')">
+                <span><span >{{$t('community.FAQ')}}</span></span>
               </a>
             </router-link>
             
             <router-link :to="{path: 'faq'}">
-              <a  class="show-sm faq_button">FAQ</a>
+              <a  class="show-sm faq_button">$t('community.FAQ')</a>
             </router-link>
           </div>
         </hgroup>
@@ -57,9 +57,9 @@
               <div class="mask-wrap"></div>
               <div class="wrap">
                   <div class="mask-info-mask">
-                    <div class="mask-meetups-title">MEETUPS</div>
+                    <div class="mask-meetups-title">{{$t('community.meet')}}</div>
                       <router-link :to="{path: 'meetups'}">
-                        <div class="mask-meetups-info">SEELE CONFERENCES AND EVENTS</div>
+                        <div class="mask-meetups-info">{{$t('community.event')}}</div>
                       </router-link>
                   </div>
               </div>
@@ -67,8 +67,8 @@
         </div>
         <hgroup class="community_list wrap">
           <div class="box-title">
-            <div>SUBSCRIBE</div>
-            <div class="subscribe_subhead">Submit your email address to receive the latest updates about Seele</div>
+            <div>{{$t('community.subscribe')}}</div>
+            <div class="subscribe_subhead">{{$t('community.subsc')}}</div>
           </div>
           <div class="community_subscribe_content">
             <el-form :model="dynamicValidateForm" ref="dynamicValidateForm" class="demo-dynamic">
@@ -79,11 +79,11 @@
                   { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
                 ]"
               >
-                <span class="form_label">EMAIL:</span>
+                <span class="form_label">{{$t('community.email')}}:</span>
                 <el-input v-model="dynamicValidateForm.email"></el-input>
               </el-form-item>
               <div class="button_wrap">
-                <a class="community-button show-lg" data-title="SUBMIT" @click="submitForm('dynamicValidateForm')">
+                <a class="community-button show-lg" :data-title="$t('community.submit')" @click="submitForm('dynamicValidateForm')">
                   <span><span >SUBMIT</span></span>
                 </a>
                 <a  class="show-sm faq_button" @click="submitForm('dynamicValidateForm')">SUBMIT</a>

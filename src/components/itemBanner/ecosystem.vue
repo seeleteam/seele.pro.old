@@ -4,8 +4,8 @@
         <div class="mask-wrap"></div>
         <div class="wrap">
             <div class="mask-info-mask">
-                <div class="mask-banner-title">ECOSYSTEM</div>
-                <div class="mask-banner-info">Seele creates ecosystem of value</div>
+                <div class="mask-banner-title">{{$t('eco.eco')}}</div>
+                <div class="mask-banner-info">{{$t('eco.SEV')}}</div>
             </div>
         </div>
     </div>

@@ -3,31 +3,31 @@
 		<Header></Header>
 			<div class="developers">
 				<div class="developers-head">
-					<h3>DEVELOPERS</h3>
+					<h3>{{$t('develop.developers')}}</h3>
 				</div>
 				<div class="developers-doc">
-					<h3>Doc</h3>
+					<h3>{{$t('develop.doc')}}</h3>
 					<div class="heading">
 						<div class="line"></div>
-						<div class="content">Heading</div>
+						<div class="content">{{$t('develop.heading')}}</div>
 						<div class="line"></div>
-						<div class="content">Heading</div>
+						<div class="content">{{$t('develop.heading')}}</div>
 						<div class="line"></div>
-						<div class="content">Heading</div>
+						<div class="content">{{$t('develop.heading')}}</div>
 						<div class="line"></div>
 					</div>
 				</div>
 				<div class="developers-tools">
-					<h3>Tools</h3>
+					<h3>{{$t('develop.tools')}}</h3>
 					<ul class="icon-list">
 						<li class="line"></li>
-						<li class="box box-1"><i class="icon iconfont">&#xe6d3;</i></li>
+						<li class="box box-1"><i class="icon iconfont">&#xe6d3;</i><span>{{$t('develop.monitor')}}</span></li>
 						<li class="line"></li>
-						<li class="box box-2"><i class="icon iconfont">&#xe684;</i></li>
+						<li class="box box-2"><i class="icon iconfont">&#xe684;</i><span>{{$t('develop.explore')}}</span></li>
 						<li class="line"></li>
-						<li class="box box-3" @click="toFaucet"><i class="icon iconfont">&#xe60d;</i></li>
+						<li class="box box-3" @click="toFaucet"><i class="icon iconfont">&#xe60d;</i><span>{{$t('develop.faucet')}}</span></li>
 						<li class="line"></li>
-						<li class="box box-4"><i class="icon iconfont">&#xe98c;</i></li>
+						<li class="box box-4"><i class="icon iconfont">&#xe98c;</i><span>{{$t('develop.wallet')}}</span></li>
 						<li class="line"></li>
 					</ul>
 				</div>
@@ -119,7 +119,7 @@
 			.heading{
 				width: 1154px;
 				height: 30px;
-				margin: 10px auto 0 auto;
+				margin: 100px auto 0 auto;
 				overflow-y: hidden;
 				display: flex;
 				justify-content: space-between;
@@ -128,6 +128,7 @@
 					width: calc(100% - 3rem);
 					display: block;
 					height: 19.7rem;
+					margin-top: 10px;
 				}
 				div.line{
 					height: 17px;
@@ -138,7 +139,7 @@
 					}
 				}
 				div.content{
-					width: 40px;
+					// width: 40px;
 					height: 22px;
 					font-size: 16px;
 					font-weight: bold;
@@ -245,11 +246,22 @@
 						}
 
 					}
+					span{
+						position: absolute;
+						color:#202020;
+						font-size: 1.125rem;
+						font-weight: bold;
+						bottom: -40px;
+						@media (max-width: 768px){
+							bottom: 2rem;
+							font-weight: normal;
+						}
+					}
 				}
 				li.box::after{
 					position: absolute;
 					color:#202020;
-					font-size: 1.5rem;
+					font-size: 1.125rem;
 					font-weight: bold;
 					bottom: -40px;
 					@media (max-width: 768px){
@@ -258,25 +270,13 @@
 					}
 				}
 				li.box-1{
-					margin: 0 -1px -1px 0
+					margin: 0 -1px -1px 0;
 				}
 				li.box-4{
 					margin: -1px 0 0 -1px
 				}
 				li.box-3{
 					margin-top: -1px
-				}
-				li.box-1::after{
-					content:"Monitor";
-				}
-				li.box-2::after{
-					content:"Explorer";
-				}
-				li.box-3::after{
-					content:"Faucet";
-				}
-				li.box-4::after{
-					content:"Wallet";
 				}
 
 			}

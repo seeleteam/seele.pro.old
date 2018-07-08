@@ -4,8 +4,8 @@
         <div class="mask-wrap"></div>
         <div class="wrap">
             <div class="mask-info-mask">
-                <div class="mask-banner-title">NEWS</div>
-                <div class="mask-banner-info">The latest news about Seele</div>
+                <div class="mask-banner-title">{{$t('news.news')}}</div>
+                <div class="mask-banner-info">{{$t('news.latest')}}</div>
             </div>
         </div>
     </div>

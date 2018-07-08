@@ -14,68 +14,68 @@
         <!-- </div> -->
         <div class="wrap">
           <hgroup class="ecological_list" id="EApp">
-            <div class="box-title">APP ECOSYSTEM </div>
+            <div class="box-title">{{$t('eco.AE')}} </div>
             <div class="tech_box">
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/lot.png" alt="lot">
+                  <img src="../assets/imgs/ecological/lot.png" :alt="$t('eco.IOT')">
                 </div>
-                <div class="tech_title">IOT</div>
+                <div class="tech_title">{{$t('eco.IOT')}}</div>
                 <div class="tech_info">
-                  <div class="">Energy-saving neural consensus algorithm 
-                    <br/>Guaranteed security and transparency of terminal data</div>
+                  <div class="">{{$t('eco.ES')}} 
+                    <br/>{{$t('eco.GS')}}</div>
                 </div>
               </div>
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/Social Application .png" alt="Social Application">
+                  <img src="../assets/imgs/ecological/Social Application .png" :alt="$t('eco.SA')">
                 </div>
-                <div class="tech_title">SOCIAL APPLICATION</div>
+                <div class="tech_title">{{$t('eco.SA')}}</div>
                 <div class="tech_info">
-                  <div class="">Million-level TPS
-                    <br/>Suitable for the booming blockchain world</div>
+                  <div class="">{{$t('eco.MT')}}
+                    <br/>{{$t('eco.SB')}}</div>
                 </div>
               </div>
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/Blockchain Game.png" alt="Blockchain Game">
+                  <img src="../assets/imgs/ecological/Blockchain Game.png" :alt="$t('eco.BG')">
                 </div>
-                <div class="tech_title">BLOCKCHAIN GAME</div>
+                <div class="tech_title">{{$t('eco.BG')}}</div>
                 <div class="tech_info">
-                  <div class="">Permanent storage of game assets 
-                    <br/>Transparent and open results</div>
+                  <div class="">{{$t('eco.PS')}} 
+                    <br/>{{$t('eco.TA')}}</div>
                 </div>
               </div>
             </div>
             <div class="tech_box">
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/e-governmet.png" alt="e-governmet">
+                  <img src="../assets/imgs/ecological/e-governmet.png" :alt="$t('eco.EG')">
                 </div>
-                <div class="tech_title">E-GOVERNMENT</div>
+                <div class="tech_title">{{$t('eco.EG')}}</div>
                 <div class="tech_info">
-                  <div class="">Explore new mode of government administration 
-                    <br/>Data becomes traceable and cannot be tampered with</div>
+                  <div class="">{{$t('eco.EN')}}
+                    <br/>{{$t('eco.DB')}}</div>
                 </div>
               </div>
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
                   <img src="../assets/imgs/ecological/fintech.png" alt="fintech">
                 </div>
-                <div class="tech_title">FINTECH</div>
+                <div class="tech_title">{{$t('eco.FIN')}}</div>
                 <div class="tech_info">
-                  <div class="">Accelerate the global flow of assets 
-                    <br/>Reduce the transaction cost of assets</div>
+                  <div class="">{{$t('eco.AT')}}
+                    <br/>{{$t('eco.RT')}}</div>
                 </div>
               </div>
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
                   <img src="../assets/imgs/ecological/healthcare.png" alt="healthcare">
                 </div>
-                <div class="tech_title">HEALTHCARE</div>
+                <div class="tech_title">{{$t('eco.HE')}}</div>
                 <div class="tech_info">
-                  <div class="">Establish an interactive channel for trusted data 
-                    <br/>Sensitive data sharing is possible</div>
+                  <div class="">{{$t('eco.EA')}} 
+                    <br/>{{$t('eco.SD')}}</div>
                 </div>
               </div>
             </div>

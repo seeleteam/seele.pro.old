@@ -5,18 +5,18 @@
       <div class="item-wrap">
           <div class="announcement-main">
               <el-breadcrumb separator-class="el-icon-arrow-right">
-                <el-breadcrumb-item :to="{ path: '/' }">HOME</el-breadcrumb-item>
+                <el-breadcrumb-item :to="{ path: '/' }">{{$t('ann.home')}}</el-breadcrumb-item>
                 <!-- <el-breadcrumb-item :to="{ path: '/community' }">COMMUNITY</el-breadcrumb-item> -->
-                <el-breadcrumb-item>ANNOUNCEMENT</el-breadcrumb-item>
+                <el-breadcrumb-item>{{$t('ann.announcement')}}</el-breadcrumb-item>
               </el-breadcrumb>
-              <div class="box-title announcement-title">Announcing the Launch of Our New Official Website</div>
+              <div class="box-title announcement-title">{{$t('ann.title')}}</div>
 
               <div class="news_detail_header">
-                <p class="news_detail_time">As Seele keeps growing, our team decided to launch an updated official website. With this new and refreshed site, we aim to enable every user to get more information from a quick read. Specific modifications are listed below.</p>
+                <p class="news_detail_time">{{$t('ann.instruction')}}</p>
               </div>
               <div class="announcement-box" v-for="item in announcementList" id="item.id" :key="item.id">
-                  <p class="announcement-box-title">{{item.question}}</p>
-                  <p class="announcement-box-info" v-html="item.answer"></p>
+                  <p class="announcement-box-title">{{$t(item.question)}}</p>
+                  <p class="announcement-box-info" v-html="$t(item.answer)"></p>
               </div>
           </div>
       </div>

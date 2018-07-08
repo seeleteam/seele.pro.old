@@ -6,30 +6,26 @@
       <div class="start_here_main">
         <hgroup class="whitepaper_wrap">
           <div class="item-wrap whitepaper_info">
-            <div class="whitepaper_title">WHITEPAPER</div>
+            <div class="whitepaper_title">{{$t('start.whitepaper')}}</div>
             <div class="whitepaper_content">
-              <a class="whitepaper-button show-lg whitepaper_download" data-title="DOWNLOAD" href="https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_tech_whitepaper_EN_v2.0.pdf" target="_blank">
-                <span><span >DOWNLOAD</span></span>
+              <a class="whitepaper-button show-lg whitepaper_download" v-bind:data-title="$t('start.download')" href="https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_tech_whitepaper_EN_v2.0.pdf" target="_blank">
+                <span><span >{{$t('start.download')}}</span></span>
               </a>
             </div>
           </div>
         </hgroup>
         <hgroup class="features_wrap" id="SFeatures">
-          <div class="box-title features_title">FEATURES</div>
+          <div class="box-title features_title">{{$t('start.features')}}</div>
           <div class="features_box_wrap">
             <div class="wrap features_box">
               <div class="features_img">
-                  <img src="../assets/imgs/startHere/Algorithm.png" alt="">
+                  <img :src="$t('features.NCA_img')" alt="">
               </div>
               <div class="features_info_wrap features_info_wrap_r">
-                  <div class="features_info_title">NEURAL CONSENSUS ALGORITHM</div>
+                  <div class="features_info_title">{{$t('start.NCA')}}</div>
                   <div class="features_info_content">
-                    <p>Seele created "Neural Consensus Algorithm". It transforms the consensus problem into an asynchronous request, 
-                      processing and sorting data in a large-scale environment based on "micro-real numbers". </p>
-                    <p>It will not only ensure 
-                        safety and low energy consumption, but it will also ensure strong linear augmenting ability. The performance is linearly
-                      accelerated as the node size increases to satisfy business requirements.
-                    </p>
+                    <p>{{$t('start.NCA-1')}} </p>
+                    <p>{{$t('start.NCA-2')}}</p>
                   </div>             
               </div> 
             </div> 
@@ -40,11 +36,10 @@
                 <img src="../assets/imgs/startHere/Network.png" alt="">
               </div>
               <div class="features_info_wrap features_info_wrap_l">
-                <div class="features_info_title">HETEROGENEOUS FOREST NETWORK</div>
+                <div class="features_info_title">{{$t('start.HFN')}}</div>
                 <div class="features_info_content">
-                  <p>Heterogeneous forest network is made up of different subnets.</p>
-                  <p>Each subnet
-                    can be seen as a stratified tree, which can handle the different service scenarios independently and interact with each other through cross-chain protocol.</p>
+                  <p>{{$t('start.HFN-1')}}</p>
+                  <p>{{$t('start.HFN-2')}}</p>
                 </div>
               </div>
               <div class="features_img features_img_lg_show">
@@ -58,11 +53,10 @@
                 <img src="../assets/imgs/startHere/vtp.png" alt="">
               </div>
               <div class="features_info_wrap features_info_wrap_r">
-                  <div class="features_info_title">Value Transport Protocol (VTP) and Value-Chain HTTP (VHTTP)</div>
+                  <div class="features_info_title">{{$t('start.VTP')}}</div>
                   <div class="features_info_content">
-                    <p>VTP is based on the heterogeneous forest network architecture. The agreement covers the 
-                      uniform identification of the assets on the chain and the routing strategy for asset discovery.</p>
-                    <p>VHTTP implements the exchange of values among chains, between on-chain and off-chain.
+                    <p>{{$t('start.VTP-1')}}</p>
+                    <p>{{$t('start.VTP-2')}}
                     </p>
                   </div>
               </div> 
@@ -74,15 +68,10 @@
                 <img src="../assets/imgs/startHere/qvic.png" alt="">
               </div>
               <div class="features_info_wrap features_info_wrap_l">
-                <div class="features_info_title">Quick Value Internet Connection (QVIC)</div>
+                <div class="features_info_title">{{$t('start.QVIC')}}</div>
                 <div class="features_info_content">
-                  <p>In the case of wide-area network, QVIC protocol conducts targeted optimization for network jitter, 
-                    packet loss and other characteristics of instability. </p>
-                  <p>QVIC protocol has greatly improved the transmission rate and efficiency, 
-                    due to the use of pre-connection mode. 
-                    As handshake control is done at the sending end, 
-                    the handshaking time can be ignored. Data packets are transmitted directly, 
-                    thus the greater efficiency is achieved.</p>
+                  <p>{{$t('start.QVIC-1')}} </p>
+                  <p>{{$t('start.QVIC-2')}}</p>
                 </div>
               </div>
               <div class="features_img features_img_lg_show">

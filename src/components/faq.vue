@@ -18,14 +18,14 @@
                   </div>
               </div> -->
               <el-breadcrumb separator-class="el-icon-arrow-right">
-                <el-breadcrumb-item :to="{ path: '/' }">HOME</el-breadcrumb-item>
-                <el-breadcrumb-item :to="{ path: '/community' }">COMMUNITY</el-breadcrumb-item>
-                <el-breadcrumb-item>FAQ</el-breadcrumb-item>
+                <el-breadcrumb-item :to="{ path: '/' }">{{$t('community.home')}}</el-breadcrumb-item>
+                <el-breadcrumb-item :to="{ path: '/community' }">{{$t('community.community')}}</el-breadcrumb-item>
+                <el-breadcrumb-item>{{$t('community.FAQ')}}</el-breadcrumb-item>
               </el-breadcrumb>
-              <div class="box-title faq-title">Frequently Asked Questions</div>
+              <div class="box-title faq-title">{{$t('FAQ.FAQ')}}</div>
               <div class="faq-box" v-for="item in faqList" id="item.id" :key="item.id">
-                  <p class="faq-box-title">{{item.question}}</p>
-                  <p class="faq-box-info" v-html="item.answer"></p>
+                  <p class="faq-box-title">{{$t(item.question)}}</p>
+                  <p class="faq-box-info" v-html="$t(item.answer)"></p>
               </div>
           </div>
       </div>

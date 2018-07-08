@@ -1,33 +1,33 @@
 <template>
   <div class="eco-div">
-    <div class="box-title">TECH ECOSYSTEM</div>
+    <div class="box-title">{{$t('ecosystem.TE')}}</div>
     <div class="eco">
       <div class="wrap">
         <div class="eco-wrap">
           <div class="layout-1">
-            <div class="layout-title">Academia</div>
-            <div class="layout-info">In-depth cooperation with top-tier universities around the world
-              <br>  Exploration of cutting-edge blockchain technology</div>
+            <div class="layout-title">{{$t('ecosystem.academia')}}</div>
+            <div class="layout-info">{{$t('ecosystem.Acade-a')}}
+              <br> {{$t('ecosystem.Acade-b')}} </div>
             <div class="layout-icon"></div>
           </div>
           <div class="layout-2">
-            <div class="layout-title">Institution</div>
-            <div class="layout-info">Establishment of labs, alliances, and associations<br>Research and development of technologies, protocols, and standards
+            <div class="layout-title">{{$t('ecosystem.institution')}}</div>
+            <div class="layout-info">{{$t('ecosystem.insti-a')}}<br>{{$t('ecosystem.insti-b')}}
 
                 </div>
             <div class="layout-icon"></div>
           </div>
           <div class="layout-3">
-            <div class="layout-title">Enterprise</div>
-            <div class="layout-info">Proactive collaboration with leading enterprises across the world<br>
-Development of practical blockchain applications for industry
+            <div class="layout-title">{{$t('ecosystem.enterprise')}}</div>
+            <div class="layout-info">{{$t('ecosystem.enterp-a')}}<br>
+{{$t('ecosystem.enterp-b')}}
 </div>
             <div class="layout-icon"></div>
           </div>
           <div class="layout-4">
-            <div class="layout-title">Developers</div>
-            <div class="layout-info">Complete and easy access for developers globally<br>
-                Development of a Seele ecosystem
+            <div class="layout-title">{{$t('ecosystem.developers')}}</div>
+            <div class="layout-info">{{$t('ecosystem.develop-a')}}<br>
+                {{$t('ecosystem.develop-b')}}
 
                 </div>
             <div class="layout-icon"></div>

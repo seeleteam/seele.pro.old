@@ -19,15 +19,12 @@ import faucet from '@/components/faucet'
 Vue.use(Router)
 
 export default new Router({
+  mode:"history",
   routes: [
     {
       path: '/',
-      redirect: 'index',
-    },
-    {
-      path: '/index',
-      name: 'index',
-      component: index
+      name:"index",
+      component:index
     },
     {
       path: '/aboutUs',
@@ -82,14 +79,14 @@ export default new Router({
       path: '/announcement',
       name: 'announcement',
       component: announcement,
-    // },{
-    //   path: '/developers',
-    //   name: 'developers',
-    //   component:developers
-    // },{
-    //   path: '/faucet',
-    //   name: 'faucet',
-    //   component:faucet
+    },{
+      path: '/developers',
+      name: 'developers',
+      component:developers
+    },{
+      path: '/faucet',
+      name: 'faucet',
+      component:faucet
     }
   ]
 })

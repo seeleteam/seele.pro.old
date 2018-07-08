@@ -1,24 +1,24 @@
 <template>
   <div id="feature" class="feature">
-    <div class="box-title feature-title">FEATURES</div>
+    <div class="box-title feature-title">{{$t('features.features')}}</div>
     <div class="feature-box">
       <div class="wrap">
         <div class="feature-item">
-          <div class="feature-item-left">
+          <div class="feature-item-left" v-bind:style="{backgroundImage:`url(${$t('features.NCA_img')}`}">
           </div>
           <div class="feature-item-content">
             <div class="feature-item-title">
-                Neural Consensus Algorithm
+                {{$t('features.NCA')}}
             </div>
             <div class="feature-item-info">
-Seele’s neural consensus algorithm was inspired by the inner workings of the human brain. It asynchronously processes and sorts data in a large-scale decentralized environment, using ε-differential agreements to allow all nodes within a network to reach consensus. Compared to existing consensus algorithms, it ensures greater fault-tolerance and is significantly more efficient. Its performance also scales linearly as network size increases, allowing it to be widely adaptable to many different use cases.
+              {{$t('features.NCA_Content')}}
             </div>
             <div class="feature-item-icons">
-              <div class="feature-item-icons-icon"></div>
-              <div class="feature-item-icons-icon"></div>
-              <div class="feature-item-icons-icon"></div>
-              <div class="feature-item-icons-icon"></div>
-              <div class="feature-item-icons-icon"></div>
+              <div class="feature-item-icons-icon"><span>{{$t('features.safety')}}</span></div>
+              <div class="feature-item-icons-icon"><span>{{$t('features.compatibility')}}</span></div>
+              <div class="feature-item-icons-icon"><span>{{$t('features.flexibility')}}</span></div>
+              <div class="feature-item-icons-icon"><span>{{$t('features.efficiency')}}</span></div>
+              <div class="feature-item-icons-icon"><span>{{$t('features.ES')}}</span></div>
             </div>
           </div>
         </div>
@@ -27,15 +27,15 @@ Seele’s neural consensus algorithm was inspired by the inner workings of the h
           </div>
           <div class="feature-item-content">
             <div class="feature-item-title">
-              Heterogeneous Forest Network
+              {{$t('features.HFN')}}
             </div>
             <div class="feature-item-info">
-Seele proposes the heterogeneous forest network, a blockchain ecosystem comprised of subnets optimized for different use cases. Subnets can handle different service scenarios independently and can interact with each other through cross-chain and cross-domain protocols. This network is secure, efficient, and compatible with current blockchain ecosystems. It presents an overarching vision for the future Internet of Value.
+              {{$t('features.HFN_Content')}}
             </div>
             <div class="feature-item-icons">
-              <div class="feature-item-icons-icon"></div>
-              <div class="feature-item-icons-icon"></div>
-              <div class="feature-item-icons-icon"></div>
+              <div class="feature-item-icons-icon"><span>{{$t('features.ESC')}}</span></div>
+              <div class="feature-item-icons-icon"><span>{{$t('features.CC')}}</span></div>
+              <div class="feature-item-icons-icon"><span>{{$t('features.SE')}}</span></div>
             </div>
           </div>
         </div>
@@ -72,8 +72,8 @@ Seele proposes the heterogeneous forest network, a blockchain ecosystem comprise
         .feature-item-left {
           width: 400px;
           height: 400px;
-          background: #195eed;
-          background: url('../../assets/imgs/startHere/Algorithm.png') no-repeat;
+          // background: #195eed;
+          background-repeat:  no-repeat;
           background-size: 100%;
         }
         .feature-item-content {
@@ -100,60 +100,35 @@ Seele proposes the heterogeneous forest network, a blockchain ecosystem comprise
               flex:1;
               height: 50px;
               position: relative;
+              span{
+                user-select: none;
+                position: absolute;
+                display: inline-block;
+                font-size: 14px;
+                color:#333;
+                top:56px;
+                left: calc(20px - 50%);
+              }
+              @media (min-width: 768px) {
+                span{
+                      width: 100%;
+                      text-align: center;
+                }
+              }
               &:nth-child(1) {
                 background: url('../../assets/imgs/feature/icon_sprite.png') no-repeat -55px -40px;
-                &::before {
-                  content: 'Safety';
-                  position: absolute;
-                  font-size: 14px;
-                  color: #333;
-                  left: -1px;
-                  top: 56px;
-                }
               }
               &:nth-child(2) {
                 background: url('../../assets/imgs/feature/icon_sprite.png') no-repeat -55px -423px;
-                &::before {
-                  content: 'Compatibility';
-                  position: absolute;
-                  font-size: 14px;
-                  color: #333;
-                  left: -21px;
-                  top: 56px;
-                }
               }
               &:nth-child(3) {
                 background: url('../../assets/imgs/feature/icon_sprite.png') no-repeat -55px -710px;
-                &::before {
-                  content: 'Flexibility';
-                  position: absolute;
-                  font-size: 14px;
-                  color: #333;
-                  left: -4px;
-                  top: 56px;
-                }
               }
               &:nth-child(4) {
                 background: url('../../assets/imgs/feature/icon_sprite.png') no-repeat -55px -326px;
-                &::before {
-                  content: 'Efficiency';
-                  position: absolute;
-                  font-size: 14px;
-                  color: #333;
-                  left: -4px;
-                  top: 56px;
-                }
               }
               &:nth-child(5) {
                 background: url('../../assets/imgs/feature/icon_sprite.png') no-repeat -55px -615px;
-                &::before {
-                  content: 'Energy-saving';
-                  position: absolute;
-                  font-size: 14px;
-                  color: #333;
-                  left: -12px;
-                  top: 56px;
-                }
               }
             }
             img {
@@ -198,38 +173,28 @@ Seele proposes the heterogeneous forest network, a blockchain ecosystem comprise
         &:nth-child(2) {
           .feature-item-icons {
             .feature-item-icons-icon {
+              span{
+                user-select: none;
+                position: absolute;
+                display: inline-block;
+                font-size: 14px;
+                color:#333;
+                top:56px;
+                
+                left: calc(20px - 18%);
+              }
+              @media (min-width: 768px) {
+                  width: 100%;
+                  text-align: center;
+              }
               &:nth-child(1) {
                 background: url('../../assets/imgs/feature/icon_sprite.png') no-repeat 11px -130px;
-                &::before {
-                  content: 'Extensive Service Coverage';
-                  position: absolute;
-                  font-size: 14px;
-                  color: #333;
-                  left: -7px;
-                  top: 56px;
-                }
               }
               &:nth-child(2) {
                 background: url('../../assets/imgs/feature/icon_sprite.png') no-repeat 11px -228px;
-                &::before {
-                  content: 'Cross-chain & Cross-domain';
-                  position: absolute;
-                  font-size: 14px;
-                  color: #333;
-                  left: 7px;
-                  top: 56px;
-                }
               }
               &:nth-child(3) {
                 background: url('../../assets/imgs/feature/icon_sprite.png') no-repeat 11px -518px;
-                &::before {
-                  content: 'Secure and Efficient';
-                  position: absolute;
-                  font-size: 14px;
-                  color: #333;
-                  left: 17px;
-                  top: 56px;
-                }
               }
             }
             img { 
@@ -327,35 +292,9 @@ Seele proposes the heterogeneous forest network, a blockchain ecosystem comprise
                 &:nth-child(even) {
                   float: right;
                 }
-                &:nth-child(1) {
-                  &::before {
-                    left: 50px;
-                    top: 14px;
-                  }
-                }
-                &:nth-child(2) {
-                  &::before {
-                    left: 50px;
-                    top: 14px;
-                  }
-                }
-                &:nth-child(3) {
-                  &::before {
-                    left: 50px;
-                    top: 14px;
-                  }
-                }
-                &:nth-child(4) {
-                  &::before {
-                    left: 50px;
-                    top: 14px;
-                  }
-                }
-                &:nth-child(5) {
-                  &::before {
-                    left: 50px;
-                    top: 10px;
-                  }
+                span{
+                  left: 50px;
+                  top: 14px
                 }
               }
               .feature-item-icons-icon::before {

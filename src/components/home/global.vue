@@ -1,34 +1,34 @@
 <template>
   <div id="#global" class="global">
-    <div class="box-title">GLOBAL PRESENCE</div>
+    <div class="box-title">{{$t('global.GP')}}</div>
     <div class="wrap">
       <div class="global-text">
         <ul>
           <li v-for="(layoutItem, index) in layout"  :key="index">
-            <span class="span-head" v-html="layoutItem.spanHead">
+            <span class="span-head" v-html="$t(layoutItem.spanHead)">
                 <!-- {{layoutItem.spanHead}} -->
             </span>
             <span class="span-end">
-              {{layoutItem.spanEnd}}
+              {{$t(layoutItem.spanEnd)}}
             </span>
           </li>
         </ul>
       </div>
       <div class="global-img">
         <div class="global-1">
-          <div class="global-address show-lg">Shenzhen, China</div>
+          <div class="global-address show-lg">{{$t('global.SC')}}</div>
           <div class="global-icon"></div>
         </div>
         <div class="global-2">
-          <div class="global-address  show-lg">San Francisco, USA</div>
+          <div class="global-address  show-lg">{{$t('global.SF')}}</div>
           <div class="global-icon"></div>
         </div>
         <div class="global-3">
-          <div class="global-address  show-lg">London, UK</div>
+          <div class="global-address  show-lg">{{$t('global.LD')}}</div>
           <div class="global-icon"></div>
         </div>
         <div class="global-4">
-          <div class="global-address  show-lg">Singapore</div>
+          <div class="global-address  show-lg">{{$t('global.S')}}</div>
           <div class="global-icon"></div>
         </div>
       </div>
@@ -41,20 +41,20 @@ export default {
     return {
       layout: [
         {
-          spanHead: 'HQ San Francisco, USA',
-          spanEnd: 'Our headquarters. Algorithm development and research.'
+          spanHead: 'global.HSF',
+          spanEnd: 'global.HSF-i'
         },
         {
-          spanHead: 'Shenzhen, China',
-          spanEnd: 'Engineering and ecosystem development.'
+          spanHead: 'global.SC',
+          spanEnd: 'global.SC-i'
         },
         {
-          spanHead: 'London, UK',
-          spanEnd: 'Application and ecosystem development.'
+          spanHead: 'global.LD',
+          spanEnd: 'global.LD-i'
         },
         {
-          spanHead: 'Singapore',
-          spanEnd: 'Graph computing research team. (In progress).'
+          spanHead: 'global.S',
+          spanEnd: 'global.S-i'
         },
         // 'Headquarter in San Francisco, USA - Seele algorithm development team and academic research cooperation.',
         // 'Shenzhen, China Branch - Seele engineering team & Eco-service development team.',

@@ -4,8 +4,8 @@
         <div class="mask-wrap"></div>
         <div class="wrap">
             <div class="mask-info-mask">
-                <div class="mask-banner-title">ABOUT US</div>
-                <div class="mask-banner-info">Get to know the Seele team</div>
+                <div class="mask-banner-title">{{$t('about.about')}}</div>
+                <div class="mask-banner-info">{{$t('about.know')}}</div>
             </div>
         </div>
     </div>

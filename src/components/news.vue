@@ -83,7 +83,9 @@ export default {
           method: "get",
           params: {
             page: current_page,
-            limit: 10
+            limit: 10,
+            lang:_this.$i18n.locale==='en'?'en_US':'zh_CN'
+
           }
         })
         .then(function(response) {

@@ -4,8 +4,8 @@
         <div class="mask-wrap"></div>
         <div class="wrap">
             <div class="mask-info-mask">
-                <div class="mask-banner-title">COMMUNITY</div>
-                <div class="mask-banner-info">Join Seele's community now</div>
+                <div class="mask-banner-title">{{$t('community.community')}}</div>
+                <div class="mask-banner-info">{{$t('community.join')}}</div>
             </div>
         </div>
     </div>

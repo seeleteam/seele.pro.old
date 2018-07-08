@@ -10,15 +10,15 @@
         <span class="index">{{index + 1}}</span>.0
       </div>
       <div class="development-box clear show-lg">
-        <div class="development-box-name">EVOLUTION</div>
+        <div class="development-box-name">{{$t('evolution.evolution')}}</div>
         <div class="highlights">
-          <div class="highlights-text">Highlights</div>
+          <div class="highlights-text">{{$t('evolution.highlights')}}</div>
           <div class="highlights-item" v-for="(highlightsItem, index) in developList[step].highLight"  :key="index">
-            {{highlightsItem}}
+            {{$t(highlightsItem)}}
           </div>
         </div>
         <div class="representative">
-          <div class="highlights-text">Example</div>
+          <div class="highlights-text">{{$t('evolution.example')}}</div>
           <div v-if="step === 0">
             <img class="representative-img" src="../../assets/imgs/logo/bitc_logo.jpg" alt="image">
           </div>
@@ -37,7 +37,7 @@
       </div>
 
       
-      <div class="box-title show-sm box-title-sm">EVOLUTION</div>
+      <div class="box-title show-sm box-title-sm">{{$t('evolution.evolution')}}</div>
       <div class="show-sm dev-box-sm">
         <swiper :options="swiperOption" ref="mySwiper">
           <swiper-slide v-for="(item, index) in developList" :key="index">
@@ -46,9 +46,9 @@
                   <span class="index">{{index + 1}}</span>.0
               </div>
               <div class="dev-box-item-content">
-                <div class="highlights">Highlights</div>
+                <div class="highlights">{{$t('evolution.highlights')}}</div>
                 <div class="dev-box-item-text" v-for="highLight in item.highLight">
-                  {{highLight}}
+                  {{$t(highLight)}}
                 </div>
               </div>
               <div class="representative">Representative</div>
@@ -118,32 +118,32 @@
           {
             id: 0,
             highLight: [
-              'Ledger of transactions'
+              'evolution.lot'
             ]
           },
           {
             id: 1,
             highLight: [
-              'Smart contracts'
+              'evolution.smart'
             ]
           },
           {
             id: 2,
             highLight: [
-              "High performance",
-              "Advanced governance",
-              "Improved consensus algorithms",
-              "Large scale applications",
-              "Cross chains"
+              "evolution.HP",
+              "evolution.AG",
+              "evolution.ICA",
+              "evolution.LSA",
+              "evolution.CC"
             ]
           },
           {
             id: 3,
             highLight: [
-              "Heterogeneous Forest Network",
-              "Neural Consensus Algorithm",
-              "On-chain and off-chain sharing",
-              "Value internet"
+              "evolution.HFN",
+              "evolution.NCA",
+              "evolution.OCS",
+              "evolution.VI"
             ]
           },
         ],

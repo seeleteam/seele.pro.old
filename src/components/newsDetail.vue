@@ -5,8 +5,8 @@
         <div class="item-wrap">
             <div class="news_detail_main">
               <el-breadcrumb separator-class="el-icon-arrow-right" class="el-breadcrumb-wrap">
-                <el-breadcrumb-item :to="{ path: '/' }">HOME</el-breadcrumb-item>
-                <el-breadcrumb-item :to="{ path: '/news' }">NEWS</el-breadcrumb-item>
+                <el-breadcrumb-item :to="{ path: '/' }">{{$t('news.home')}}</el-breadcrumb-item>
+                <el-breadcrumb-item :to="{ path: '/news' }">{{$t('news.news')}}</el-breadcrumb-item>
                 <el-breadcrumb-item class="news-detail-breadcrumb-title">{{newsDetail.title}}</el-breadcrumb-item>
               </el-breadcrumb>
               <div class="news_detail_header">
@@ -54,7 +54,7 @@ export default {
     getNewsDetail(id) {
       let _this = this;
       this.$ajax
-        .get(baseUrl + "/news/" + id)
+        .get(baseUrl + "/news/" + id,{params:{lang:_this.$i18n.locale==='en'?'en_US':'zh_CN'}})
         .then(function(response) {
           _this.newsDetail = response.data.data;
         })

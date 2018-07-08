@@ -2,17 +2,17 @@
   <div id="team" class="team-and-global">
     <div class="wrap">
       <div class="team">
-        <div class="box-title">LEADERSHIP</div>
+        <div class="box-title">{{$t('leadership.leadership')}}</div>
         <div class="team-box">
           <a class="team-item" :href="teamItem.linkedin" v-for="(teamItem, index) in teamList" :key="index">
             <img v-if="index === 0" class="team-img" src="../../assets/imgs/team/ceo.jpg">
             <img v-else-if="index === 1" class="team-img" src="../../assets/imgs/team/coo.png">
             <img v-else class="team-img" src="../../assets/imgs/team/scientist.png">
             <div class="clear team-box-sm">
-              <div class="team-name">{{teamItem.name}}</div>
-              <div class="team-position">{{teamItem.position}}</div>
+              <div class="team-name">{{$t(teamItem.name)}}</div>
+              <div class="team-position">{{$t(teamItem.position)}}</div>
             </div>
-            <div class="team-des">{{teamItem.des}}</div>
+            <div class="team-des">{{$t(teamItem.des)}}</div>
           </a>
         </div>
       </div>
@@ -39,23 +39,23 @@
         teamList: [
           {
             src: '',
-            name: 'Dr. Maolin Zheng',
-            position: 'CEO',
-            des: 'Seele Realize',
+            name: 'leadership.DMZ',
+            position: 'leadership.CEO',
+            des: 'leadership.SR',
             linkedin: 'https://www.linkedin.com/in/maolin-zheng-584a5a6/',
           },
           {
             src: '',
-            name: 'Dr. Nick Smith',
-            position: 'COO',
-            des: 'Seele Industrialize',
+            name: 'leadership.DNS',
+            position: 'leadership.COO',
+            des: 'leadership.SIn',
             linkedin: 'https://www.linkedin.com/in/nicholas-s-19626a1/',
           },
           {
             src: '',
-            name: 'Dr. Wei Bi',
-            position: 'Scientist',
-            des: 'Seele Idealize',
+            name: 'leadership.DWB',
+            position: 'leadership.scientist',
+            des: 'leadership.SId',
             linkedin: 'https://www.linkedin.com/in/biweicn/',
           },
         ],

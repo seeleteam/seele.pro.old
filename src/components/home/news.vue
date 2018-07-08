@@ -1,7 +1,7 @@
 <template>
   <div class="home-news">
     <div class="wrap">
-      <div class="box-title">NEWS</div>
+      <div class="box-title">{{$t('news.news')}}</div>
       <div class="news-box">
         <div class="news-item box-hover" v-for="(item, index) in newsList" :key="index" @click="clickNews(item.id)">
           <img class="news-img" :src="item.image">
@@ -14,10 +14,10 @@
           </div>
         </div>
       </div>
-      <a v-if="ready" class="button show-lg" data-title="READ MORE" @click="readMore">
-          <span><span >READ MORE</span></span>
+      <a v-if="ready" class="button show-lg" v-bind:data-title="$t('news.more')" @click="readMore">
+          <span><span >{{$t('news.more')}}</span></span>
       </a>
-      <div v-if="ready" class="news-btn-sm show-sm" @click="readMore">READ MORE</div>
+      <div v-if="ready" class="news-btn-sm show-sm" @click="readMore">{{$t('news.more')}}</div>
     </div>
   </div>
 </template>

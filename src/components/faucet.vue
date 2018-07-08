@@ -2,11 +2,11 @@
 	<div>
 		<Header></Header>
 			<div class="faucet">
-				<h3>Faucet</h3>
-				<p class="title">Address in TestNet</p>
+				<h3>{{$t('develop.faucet')}}</h3>
+				<p class="title">{{$t('develop.AT')}}</p>
 				<input type="text" name="">
-				<p class="tips">一个地址只能领取一次</p>
-				<button>Get 10 Seeles</button>
+				<p class="tips">{{$t('develop.OA')}}</p>
+				<button>{{$t('develop.GS')}}</button>
 			</div>
 		<Footer></Footer>
 	</div>
@@ -25,6 +25,8 @@
 	}
 </script>
 <style lang="less">
+	@media screen and (max-width:768px){html,body{font-size:20px !important}}
+	@media screen and (max-width:380px){html,body{font-size:10px !important}}
 	.faucet{
 		height: 800px;
 		font-family:AvenirLT-Heavy;

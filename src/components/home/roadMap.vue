@@ -1,33 +1,33 @@
 <template>
   <div class="road-map" id="roadmap">
-    <div class="box-title road-map-title">ROAD MAP</div>
+    <div class="box-title road-map-title">{{$t('map.roadmap')}}</div>
     <div class="wrap show-lg">
       <div class="road-line"></div> 
       <div class="step-box">
         <div class="step-one step-before">
           <i></i>
           <div class="step-date">2018 Q1</div>
-          <div class="step-info">Minimum feasibility study</div>
+          <div class="step-info">{{$t('map.Q1')}}</div>
         </div>
         <div class="step-two step-before">
           <i></i>
           <div class="step-date">2018 Q2</div>
-          <div class="step-info">Complete the test network</div>
+          <div class="step-info">{{$t('map.Q2')}}</div>
         </div>
         <div class="step-three">
           <i></i>
           <div class="step-date">2018 Q3</div>
-          <div class="step-info">Test core functionality and optimize performance</div>
+          <div class="step-info">{{$t('map.Q3')}}</div>
         </div>
         <div class="step-four">
           <i></i>
           <div class="step-date">2018 Q4</div>
-          <div class="step-info">Release public main net</div>
+          <div class="step-info">{{$t('map.Q4')}}</div>
         </div>
         <div class="step-five">
           <i></i>
           <div class="step-date">2019 Q1</div>
-          <div class="step-info">Develop application support tools</div>
+          <div class="step-info">{{$t('map.Q19')}}</div>
         </div>
         <!-- <el-tooltip class="item" effect="light" content="tips" placement="top"> -->
           <div class="step-1"></div>
@@ -46,13 +46,13 @@
         </el-tooltip> -->
         <el-tooltip class="item" effect="light" placement="top">
           <div slot="content" >
-            1. P2P network foundation, peer detection and discovering<br/>
-            2. Consensus algorithm framework and baseline implementation (PoW)<br/>
-            3. Simple transaction module<br/>
-            4. Miner module<br/>
-            5. Account module<br/>
-            6. Encryption, signature, log, local storage<br/>
-            7. RPC framework"<br/>
+            {{$t('map.p1')}}<br/>
+            {{$t('map.p2')}}<br/>
+            {{$t('map.p3')}}<br/>
+            {{$t('map.p4')}}<br/>
+            {{$t('map.p5')}}<br/>
+            {{$t('map.p6')}}<br/>
+            {{$t('map.p7')}}<br/>
           </div>
           <div class="step-3"></div>
         </el-tooltip>
@@ -75,7 +75,7 @@
           <swiper-slide v-for="(item, index) in roadList" :key="index" class="road-item">
             <div>{{item.title}}</div>
             <div class="road-line-sm"></div>
-            <div>{{item.info}}</div>
+            <div>{{$t(item.info)}}</div>
           </swiper-slide>
           <div class="swiper-pagination"  slot="pagination"></div>
           <!-- <div class="swiper-button-prev" slot="button-prev"></div> -->
@@ -113,23 +113,23 @@
         roadList: [
           {
             title: '2018 Q1',
-            info: 'Minimum feasibility study'
+            info: 'map.Q1'
           },
           {
             title: '2018 Q2',
-            info: 'Complete the test network'
+            info: 'map.Q2'
           },
           {
             title: '2018 Q3',
-            info: 'Test core functionality and optimize performance'
+            info: 'map.Q3'
           },
           {
             title: '2018 Q4',
-            info: 'Release public main net'
+            info: 'map.Q4'
           },
           {
             title: '2019 Q1',
-            info: 'Develop application support tools'
+            info: 'map.Q19'
           },
         ],
         swiperOption: {

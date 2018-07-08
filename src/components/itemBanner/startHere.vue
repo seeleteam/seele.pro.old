@@ -4,8 +4,8 @@
         <div class="mask-wrap"></div>
         <div class="wrap">
             <div class="mask-info-mask">
-                <div class="mask-banner-title">START HERE</div>
-                <div class="mask-banner-info">Start exploring Seele</div>
+                <div class="mask-banner-title">{{$t('start.here')}}</div>
+                <div class="mask-banner-info">{{$t('start.exp')}}</div>
             </div>
         </div>
     </div>
