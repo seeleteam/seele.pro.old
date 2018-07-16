@@ -84,7 +84,7 @@ export default {
           params: {
             page: current_page,
             limit: 10,
-            lang:_this.$i18n.locale==='en'?'en_US':'zh_CN'
+            lang:_this.lang
 
           }
         })
@@ -104,6 +104,16 @@ export default {
     saveId(id){
       sessionStorage.setItem('newsId',id);
       this.$router.push(`/newsDetail?id=${id}`);
+    }
+  },
+  computed:{
+    lang(){
+      return this.$i18n.locale === 'en'?'en_US':'zh_CN'
+    }
+  },
+  watch:{
+    lang(val){
+      this.initData()
     }
   }
 };

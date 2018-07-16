@@ -4,8 +4,8 @@
       <img src="../assets/imgs/logo.png" alt="logo" class="fl header-logo" @click="goHome">
       <!-- <img src="../assets/imgs/logo_phone.png" alt="logo" class="fl header-logo show-sm" @click="goHome"> -->
       <div class="fl">
-        <ul class="clear">
-          <li class='header-item' v-for="(headerItem, index) in headerList" :key="index" @click="clickHeader(headerItem.id)">
+        <ul class="clear header-item-list">
+          <li class='header-item' v-bind:style="{'fontFamily':$i18n.locale==='cn'?'微软雅黑':''}" v-for="(headerItem, index) in headerList" :key="index" @click="clickHeader(headerItem.id)">
             {{$t(headerItem.text)}}
           </li>
         </ul>
@@ -24,7 +24,7 @@
         <div class="header-menu">
           <div class="language-switch">
               <div class="language-switch-wrap">
-                  <p class="language">{{langMap[this.$i18n.locale]}}<span>&nbsp;</span><i class="caret"></i></p>
+                  <p class="language">{{langMap[$i18n.locale]}}<span>&nbsp;</span><i class="caret"></i></p>
                   <ul class="language-list">
                       <li v-for="(v,k) in langMap" :key="k" @click="switchLanguage(k,v)">{{v}}</li>
                   </ul>
@@ -89,9 +89,9 @@ import cookie from '@/utils/cookie'
         {
           text: 'header.bounty',
           id: 3,
-        },{
-          text:  'header.developers',
-          id:4
+        // },{
+        //   text:  'header.developers',
+        //   id:4
         },
         {
           text: 'header.announcements',
@@ -136,7 +136,7 @@ import cookie from '@/utils/cookie'
               {
                 id: '2-1',
                 text: 'menu.telegram',
-                href: 'https://t.me/seeletech',
+                href: 'community.telegram',
                 type: 1,
               },
               {
@@ -188,23 +188,6 @@ import cookie from '@/utils/cookie'
               },
             ]
           },
-          // {
-          //   name: 'Event',
-          //   list: [
-          //     {
-          //       text: 'Bounty',
-          //       href: '',
-          //     },
-          //     {
-          //       text: 'Announcement',
-          //       href: '',
-          //     },
-          //     {
-          //       text: 'Learn',
-          //       href: '',
-          //     },
-          //   ]
-          // },
           {
             id: '4',
             name: 'menu.AU',
@@ -223,7 +206,7 @@ import cookie from '@/utils/cookie'
                 anchorId: 'Aglobal'
               },
             ]
-          },
+          }
         ],
         menuList1: [
           {
@@ -348,6 +331,28 @@ import cookie from '@/utils/cookie'
               },
             ]
           },
+
+          {
+            id: '5',
+            name: 'language.language',
+            href: 'language',
+            list: [
+              {
+                id: '5-1',
+                text: 'language.cn',
+                href: 'cn',
+                anchorId: '',
+                type:'lang'
+              },
+              {
+                id: '5-2',
+                text: 'language.en',
+                href: 'en',
+                anchorId: 'Aglobal',
+                type:'lang'
+              },
+            ]
+          }
         ]
       }
     },
@@ -359,9 +364,14 @@ import cookie from '@/utils/cookie'
         cookie.set('lang',lang)
       },
       goAnchor(link){
+        if(link.type === 'lang'){
+          this.switchLanguage(link.href, this.langMap[this.href])
+          this.menuVisible = false
+          return
+        }
         this.menuVisible = false
         if (link.type === 1) {
-          window.location.href = link.href;
+          window.location.href =this.$t(link.href);
         } else {
           if(link.anchorId){
             this.$router.push(`/${link.href}`);
@@ -447,6 +457,13 @@ import cookie from '@/utils/cookie'
       margin-right: 60px;
       cursor: pointer;
     }
+    @media (min-width: 768px) {
+          .header-item-list{
+            width: 750px;
+            display: flex;
+            justify-content: space-between;
+          }
+    }
     .header-item {
       box-sizing: border-box;
       float: left;
@@ -524,6 +541,7 @@ import cookie from '@/utils/cookie'
 }
 @media(max-width: 768px){
   .language-switch{
+    display: none;
     position: absolute;
     right: 30px;
     height: 100%;
@@ -547,19 +565,28 @@ p.language{
 	position: 0;
 	line-height: 28px;
 	text-align: center;
-	opacity: .7
+  opacity: .7;
+  .caret{
+    background-image: url(../assets/imgs/drop_down.png);
+    display: inline-block;
+    background-size: 10px 10px;
+    width: 11px;
+    height: 11px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 ul.language-list{
 	padding: 0;
 	list-style: none;
 	position: absolute;
-	z-index: 1;
+	z-index: 10000;
 	top: 40px;
 	width: 100%;
 	max-height: 0;
 	font-size: 14px;
 	color: #c6c6c6;
-	background-color: #3e3e3e;
+	background-color: #303b58b3;
 	overflow-y: hidden;
 	transition: max-height .75s ease-in-out
 }

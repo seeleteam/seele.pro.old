@@ -32,8 +32,12 @@
     },
     methods: {
       getNews(formName) {
+        let lang = this.lang
         this.$ajax.get(baseUrl + "/news", {
-          method: "get"
+          method: "get",
+          params:{
+            lang:lang
+          }
         })
         .then((response) => {
           const result = response.data.data;
@@ -59,6 +63,16 @@
     created() {
       this.getNews();
     },
+    computed:{
+    lang(){
+      return this.$i18n.locale === 'en'?'en_US':'zh_CN'
+    }
+  },
+  watch:{
+    lang(val){
+      this.getNews()
+    }
+  }
   }
 </script>
 <style lang="less">

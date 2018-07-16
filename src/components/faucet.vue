@@ -4,9 +4,9 @@
 			<div class="faucet">
 				<h3>{{$t('develop.faucet')}}</h3>
 				<p class="title">{{$t('develop.AT')}}</p>
-				<input type="text" name="">
+				<input type="text" name="" v-model="address">
 				<p class="tips">{{$t('develop.OA')}}</p>
-				<button>{{$t('develop.GS')}}</button>
+				<button @click="doGetSeele">{{$t('develop.GS')}}</button>
 			</div>
 		<Footer></Footer>
 	</div>
@@ -16,11 +16,23 @@
 	import Header from './header'
 
 	export default {
+		data:function(){
+			return {
+				address:""
+			}
+		},
 		components:{
 			Header,
 			Footer
 		},
 		methods:{
+			
+			doGetSeele(){
+				let obj = {to:this.address}
+				this.$ajax.post('http://106.75.10.236:2683/faucet/send',obj,{ headers: {"Content-Type": "application/x-www-form-urlencoded"},emulateJSON: true }).then(res=>{
+					console.log(res)
+				})
+			}
 		}
 	}
 </script>

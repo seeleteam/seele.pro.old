@@ -5,8 +5,8 @@
     <div class="wrap">
       <div class="meetups_main">
         <div class="meetups_title">
-          <h1>Conferences and events</h1>
-          <p>Find events, conferences and meetups all over the world.</p>
+          <h1>{{$t('meetups.CAE')}}</h1>
+          <p>{{$t('meetups.find')}}</p>
         </div>
         <gmap-map
           :center="center"
@@ -23,7 +23,7 @@
           ></gmap-marker>
         </gmap-map>
         <div class="meetups_content">
-          <p>Upcoming events and conferences</p>
+          <p>{{$t('meetups.events')}}</p>
           <ul class="meetups_list">
             <li v-for="item in meetupsList"  :key="item.id" class="meetups_li">
               <div class="meetups_list_time">
@@ -100,10 +100,12 @@ export default {
   methods: {
     initData() {
       let _this = this;
+      let lang = this.lang
       _this.$ajax
         .get(baseUrl + "/meetups", {
           method: "get",
           params: {
+            lang
             // size: size,
             // limit: 10
           }
@@ -139,6 +141,16 @@ export default {
   },
   updated() {
     window.scroll(0, 0);
+  },
+  computed:{
+    lang(){
+      return this.$i18n.locale === 'en'?'en_US':'zh_CN'
+    }
+  },
+  watch:{
+    lang(val){
+      this.initData()
+    }
   }
 };
 </script>

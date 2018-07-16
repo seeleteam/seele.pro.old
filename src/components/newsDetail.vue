@@ -28,6 +28,7 @@ import { baseUrl } from "../config/port";
 export default {
   data() {
     return {
+      id:"",
       newsDetail: {}
     };
   },
@@ -36,31 +37,41 @@ export default {
     Footer
   },
   mounted() {
-    let id = sessionStorage.getItem("newsId")
-    if(id == null || id == "")
-    id = window.location.hash
+    this.id = sessionStorage.getItem("newsId")
+    if(this.id == null || this.id == "")
+    this.id = window.location.hash
       ? window.location.hash.split("?")[1]
         ? window.location.hash.split("?")[1].split("=")[1]
         : ""
       : "";
      
-    this.getNewsDetail(id);
+    this.getNewsDetail();
     window.scroll(0, 0);
   },
   updated() {
     window.scroll(0, 0);
   },
   methods: {
-    getNewsDetail(id) {
+    getNewsDetail() {
       let _this = this;
       this.$ajax
-        .get(baseUrl + "/news/" + id,{params:{lang:_this.$i18n.locale==='en'?'en_US':'zh_CN'}})
+        .get(baseUrl + "/news/" + this.id,{params:{lang:this.lang}})
         .then(function(response) {
           _this.newsDetail = response.data.data;
         })
         .catch(function(error) {
           console.log(error);
         });
+    }
+  },
+  computed:{
+    lang(){
+      return this.$i18n.locale === 'en'?'en_US':'zh_CN'
+    }
+  },
+  watch:{
+    lang(val){
+      this.getNewsDetail()
     }
   }
 };

@@ -5,7 +5,7 @@
       <div class="global-text">
         <ul>
           <li v-for="(layoutItem, index) in layout"  :key="index">
-            <span class="span-head" v-html="$t(layoutItem.spanHead)">
+            <span class="span-head" :style="{width:headWidth}" v-html="$t(layoutItem.spanHead)">
                 <!-- {{layoutItem.spanHead}} -->
             </span>
             <span class="span-end">
@@ -63,6 +63,11 @@ export default {
       ]
     };
   },
+  computed:{
+    headWidth(){
+      return this.$i18n.locale === 'en'?'200px':'300px'
+    }
+  }
 };
 </script>
 <style lang="less">

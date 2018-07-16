@@ -9,10 +9,10 @@ let baseUrl = '';
 
 if (process.env.NODE_ENV == 'development') {
   // baseUrl = "http://seele.loc/api"
-  // baseUrl = "http://bt.seele.pro/api"
+  // baseUrl = "https://bt.seele.pro/api"
   baseUrl = "https://admin.seele.pro/api"
 } else if (process.env.NODE_ENV == 'production') {
-  // baseUrl = "http://bt.seele.pro/api"
+  // baseUrl = "https://bt.seele.pro/api"
   baseUrl = "https://admin.seele.pro/api"
 }
 export {

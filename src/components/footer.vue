@@ -23,7 +23,7 @@
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/in.png" alt="in"> -->
           </a>
-          <a href="https://t.me/seeletech" target="_blank">
+          <a :href="$t('community.telegram')" target="_blank">
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/telegram.png" alt="telegram"> -->
           </a>

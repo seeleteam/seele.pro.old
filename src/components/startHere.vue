@@ -8,7 +8,7 @@
           <div class="item-wrap whitepaper_info">
             <div class="whitepaper_title">{{$t('start.whitepaper')}}</div>
             <div class="whitepaper_content">
-              <a class="whitepaper-button show-lg whitepaper_download" v-bind:data-title="$t('start.download')" href="https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_tech_whitepaper_EN_v2.0.pdf" target="_blank">
+              <a class="whitepaper-button show-lg whitepaper_download" v-bind:data-title="$t('start.download')" :href="$t('header.paper')" target="_blank">
                 <span><span >{{$t('start.download')}}</span></span>
               </a>
             </div>

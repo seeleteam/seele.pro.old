@@ -215,7 +215,7 @@
       .step-info {
         width: 200px;
         position: absolute;
-        left: -75px;
+        left: -87px;
         top: 40px;
         color: #fff;
         font-size: 14px;

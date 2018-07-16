@@ -19,7 +19,7 @@
             <a href="https://www.linkedin.com/company/seeletech" target="_blank">
               <span class="community-in"></span>
             </a>
-            <a href="https://t.me/seeletech" target="_blank">
+            <a v-bind:href="$t('community.telegram')" target="_blank">
               <span class="community-telegram"></span>
             </a>
           </div>
@@ -36,7 +36,7 @@
             <a href="https://github.com/seeleteam" target="_blank">
               <span class="community-github"></span>
             </a>
-            <a href="http://weibo.com/SeeleTech" target="_blank">
+            <a href="https://weibo.com/u/6561132287" target="_blank">
               <span class="community-xinlang"></span>
             </a>
           </div>
@@ -48,7 +48,7 @@
             </router-link>
             
             <router-link :to="{path: 'faq'}">
-              <a  class="show-sm faq_button">$t('community.FAQ')</a>
+              <a  class="show-sm faq_button">{{$t('community.FAQ')}}</a>
             </router-link>
           </div>
         </hgroup>
@@ -84,9 +84,9 @@
               </el-form-item>
               <div class="button_wrap">
                 <a class="community-button show-lg" :data-title="$t('community.submit')" @click="submitForm('dynamicValidateForm')">
-                  <span><span >SUBMIT</span></span>
+                  <span><span >{{$t('community.submit')}}</span></span>
                 </a>
-                <a  class="show-sm faq_button" @click="submitForm('dynamicValidateForm')">SUBMIT</a>
+                <a  class="show-sm faq_button" @click="submitForm('dynamicValidateForm')">{{$t('community.submit')}}</a>
               </div>
             </el-form>
           </div>
