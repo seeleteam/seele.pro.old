@@ -39,12 +39,11 @@ export default {
   mounted() {
     this.id = sessionStorage.getItem("newsId")
     if(this.id == null || this.id == "")
-    this.id = window.location.hash
-      ? window.location.hash.split("?")[1]
-        ? window.location.hash.split("?")[1].split("=")[1]
+    this.id = window.location.search
+      ? window.location.search.split("?")[1]
+        ? window.location.search.split("?")[1].split("=")[1]
         : ""
       : "";
-     
     this.getNewsDetail();
     window.scroll(0, 0);
   },

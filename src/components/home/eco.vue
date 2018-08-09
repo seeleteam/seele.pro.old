@@ -45,7 +45,7 @@
     height: 600px;
     background-size: 100% 600px;
     overflow: hidden;
-    background: url('../../assets/imgs/eco_tupian.png') no-repeat;
+    background: url('../../assets/imgs/eco_tupian.jpg') no-repeat;
     background-size: 100% 100%;
     .eco-wrap {
       height: 600px;

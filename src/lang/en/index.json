@@ -5,7 +5,9 @@
         "en":"English"
     },
     "header":{
+        "research":"Research",
         "whitepaper":"Whitepaper",
+        "yellowpaper":"Yellowpapers",
         "news":"News",
         "github":"GitHub",
         "bounty":"Bounty",
@@ -50,7 +52,7 @@
         "efficiency":"Efficiency",
         "NCA":"Neural Consensus Algorithm",
         "NCA_Content":"Seele’s neural consensus algorithm was inspired by the inner workings of the human brain. It asynchronously processes and sorts data in a large-scale decentralized environment, using ε-differential agreements to allow all nodes within a network to reach consensus. Compared to existing consensus algorithms, it ensures greater fault-tolerance and is significantly more efficient. Its performance also scales linearly as network size increases, allowing it to be widely adaptable to many different use cases.",
-        "NCA_img":"/static/imgs/Algorithm.png",
+        "NCA_img":"/static/imgs/Algorithm.jpg",
         "HFN":"Heterogeneous Forest Network",
         "HFN_Content":"Seele proposes the heterogeneous forest network, a blockchain ecosystem comprised of subnets optimized for different use cases. Subnets can handle different service scenarios independently and can interact with each other through cross-chain and cross-domain protocols. This network is secure, efficient, and compatible with current blockchain ecosystems. It presents an overarching vision for the future Internet of Value.",
         "ESC":"Extensive Service Cover",
@@ -285,6 +287,7 @@
     "menu":{
         "start":"Start Here",
         "whitepaper":"Whitepaper",
+        "yellowpaper":"Yellowpapers",
         "features":"Features",
         "community":"Community",
         "telegram":"Telegram",
@@ -305,12 +308,18 @@
         "heading":"Heading",
         "tools":"Tools",
         "monitor":"Monitor",
-        "explore":"Explore",
+        "explore":"Explorer",
         "faucet":"Faucet",
         "wallet":"Wallet",
         "AT":"Address in TestNet",
-        "GS":"Get 10 Seele",
-        "OA":"One Address can only apply for one time"
+        "GS":"Get 1 Seele",
+        "OA":"One Address can only apply for one time",
+        "API":"API Document",
+        "start":"Getting Started With Seele",
+        "address":"Please enter a 42-bit address starting with 0x",
+        "success":"Success!",
+        "failed":"Failed!",
+        "reward":"You have been rewarded 1 Seele token."
     },
     "ann":{
         "home":"HOME",

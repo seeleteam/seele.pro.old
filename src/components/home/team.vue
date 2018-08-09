@@ -6,8 +6,8 @@
         <div class="team-box">
           <a class="team-item" :href="teamItem.linkedin" v-for="(teamItem, index) in teamList" :key="index">
             <img v-if="index === 0" class="team-img" src="../../assets/imgs/team/ceo.jpg">
-            <img v-else-if="index === 1" class="team-img" src="../../assets/imgs/team/coo.png">
-            <img v-else class="team-img" src="../../assets/imgs/team/scientist.png">
+            <img v-else-if="index === 1" class="team-img" src="../../assets/imgs/team/coo.jpg">
+            <img v-else class="team-img" src="../../assets/imgs/team/scientist.jpg">
             <div class="clear team-box-sm">
               <div class="team-name">{{$t(teamItem.name)}}</div>
               <div class="team-position">{{$t(teamItem.position)}}</div>

@@ -6,7 +6,7 @@
 				<p class="title">{{$t('develop.AT')}}</p>
 				<input type="text" name="" v-model="address">
 				<p class="tips">{{$t('develop.OA')}}</p>
-				<button @click="doGetSeele">{{$t('develop.GS')}}</button>
+				<el-button type="primary" v-loading.fullscreen.lock="fullscreenLoading"  @click="doGetSeele">{{$t('develop.GS')}}</el-button>
 			</div>
 		<Footer></Footer>
 	</div>
@@ -14,11 +14,13 @@
 <script>
 	import Footer from './footer'
 	import Header from './header'
+	import { Message, Loading} from 'element-ui'
 
 	export default {
 		data:function(){
 			return {
-				address:""
+				address:"",
+				fullscreenLoading:false
 			}
 		},
 		components:{
@@ -28,21 +30,45 @@
 		methods:{
 			
 			doGetSeele(){
-				let obj = {to:this.address}
-				this.$ajax.post('http://106.75.10.236:2683/faucet/send',obj,{ headers: {"Content-Type": "application/x-www-form-urlencoded"},emulateJSON: true }).then(res=>{
-					console.log(res)
+				if(!this.address){
+					Message.error(this.$t('develop.address'))
+					return
+				}
+
+				let _this = this
+				this.fullscreenLoading = true
+				this.$ajax.get('https://faucet.niren.org/seele/faucet/'+this.address ,{ headers: {"Content-Type": "application/x-www-form-urlencoded"},emulateJSON: true }).then(res=>{
+					if(res.data.succeed){
+						_this.$notify.success({
+							title: _this.$t('develop.success'),
+							message: _this.$t('develop.reward')
+						});
+					}else{
+						_this.$notify.error({
+							title:_this.$t('develop.failed'),
+							message:res.data.data
+						})
+					}
+
+				}).catch(function(error){
+					_this.$notify.error({
+						title:_this.$t('develop.failed'),
+						message:_this.$t('develop.failed'),
+					})
+				}).finally(function(){
+					_this.fullscreenLoading = false
 				})
 			}
 		}
 	}
 </script>
 <style lang="less">
-	@media screen and (max-width:768px){html,body{font-size:20px !important}}
+	@media screen and (max-width:900px){html,body{font-size:10px !important}}
 	@media screen and (max-width:380px){html,body{font-size:10px !important}}
 	.faucet{
-		height: 800px;
+		height: 600px;
 		font-family:AvenirLT-Heavy;
-		@media (max-width: 768px){
+		@media (max-width: 900px){
 				height: 39rem;
 		}
 		h3{
@@ -50,7 +76,7 @@
 			color: #202020;
 			text-align: center;
 			margin-top: 117px;
-			@media (max-width: 768px)  {
+			@media (max-width: 900px)  {
 				  margin-top: 4.45rem;
 				  font-size: 1.8rem;
 			}  
@@ -61,7 +87,7 @@
 			font-family:AvenirLT-Roman;
 			text-align: center;
 			margin-top: 120px;
-			@media (max-width: 768px){
+			@media (max-width: 900px){
 				font-size: 1.5rem;
 				margin-top: 5.55rem;
 			}
@@ -72,15 +98,16 @@
 			display: block;
 			margin: 30px auto 0 auto;
 			padding:1.2rem;
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 			box-sizing: border-box;
 			border-radius: 5px;
 			outline: none;
 			border: solid 1px #d3d3d3;
 			transition: all .5s ease-in-out;
-			@media (max-width: 768px){
+			@media (max-width: 900px){
 				// width: 36rem;
 				// height: 5rem;
+				font-size: 1rem;
 				width: 29rem;
 				height: 4rem;
 				margin-top: 2rem;
@@ -94,37 +121,19 @@
 			font-size: 14px;
 			margin-top: 26px;
 			text-align: center;
-			@media (max-width: 768px){
+			@media (max-width: 900px){
 				font-size: 1.4rem;
 				margin-top: 1.4rem;
 			}
 		}
-		button{
-			width: 160px;
-			height: 50px;
-			margin: 62px auto 0 auto;
+		.el-button{
+			margin: 0 auto;
+			margin-top: 100px;
 			display: block;
-			background-color: #1346A2;
-			border-radius: 5px;
-			border:0;
+			@media (max-width: 900px){
+				margin-top: 5rem;
+			}
 
-			font-size: 16px;
-			font-weight: bold;
-			color: white;
-			font-family:AvenirLT-Heavy;
-			cursor: pointer;
-			&:hover{
-				opacity: .8
-			}
-			&:active{
-				opacity: .6
-			};
-			@media (max-width: 768px){
-			    width: 12.5rem;
-			    height: 4rem;
-			    font-size: 1.5rem;
-			    margin-top: 3.6rem;
-			}
 		}
 
 	}

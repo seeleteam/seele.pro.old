@@ -9,11 +9,11 @@
 					<h3>{{$t('develop.doc')}}</h3>
 					<div class="heading">
 						<div class="line"></div>
-						<div class="content">{{$t('develop.heading')}}</div>
+						<div class="content" @click="open('https://github.com/seeleteam/go-seele/wiki/Getting-Started-With-Seele')">{{$t('develop.start')}}</div>
 						<div class="line"></div>
-						<div class="content">{{$t('develop.heading')}}</div>
+						<div class="content"></div>
 						<div class="line"></div>
-						<div class="content">{{$t('develop.heading')}}</div>
+						<div class="content" @click="open('https://github.com/seeleteam/go-seele/wiki/API-Document')">{{$t('develop.API')}}</div>
 						<div class="line"></div>
 					</div>
 				</div>
@@ -21,13 +21,13 @@
 					<h3>{{$t('develop.tools')}}</h3>
 					<ul class="icon-list">
 						<li class="line"></li>
-						<li class="box box-1"><i class="icon iconfont">&#xe6d3;</i><span>{{$t('develop.monitor')}}</span></li>
+						<li class="box box-1" @click="open('http://seelemonitor.net/')"><i class="icon iconfont">&#xe6d3;</i><span>{{$t('develop.monitor')}}</span></li>
 						<li class="line"></li>
-						<li class="box box-2"><i class="icon iconfont">&#xe684;</i><span>{{$t('develop.explore')}}</span></li>
+						<li class="box box-2" @click="open('http://seelescan.net/')"><i class="icon iconfont">&#xe684;</i><span>{{$t('develop.explore')}}</span></li>
 						<li class="line"></li>
-						<li class="box box-3" @click="toFaucet"><i class="icon iconfont">&#xe60d;</i><span>{{$t('develop.faucet')}}</span></li>
+						<li class="box box-3" @click="open('https://seele.pro/faucet')"><i class="icon iconfont">&#xe60d;</i><span>{{$t('develop.faucet')}}</span></li>
 						<li class="line"></li>
-						<li class="box box-4"><i class="icon iconfont">&#xe98c;</i><span>{{$t('develop.wallet')}}</span></li>
+						<li class="box box-4" @click="open('http://web-wallet.seele.pro/')"><i class="icon iconfont">&#xe98c;</i><span>{{$t('develop.wallet')}}</span></li>
 						<li class="line"></li>
 					</ul>
 				</div>
@@ -47,13 +47,15 @@
 		methods:{
 			toFaucet:function(){
 				this.$router.push('/faucet')
+			},
+			open(url){
+				window.open(url)
 			}
-		}
+		},
 	}
 </script>
 <style lang="less">
-	@media screen and (max-width:768px){html,body{font-size:20px !important}}
-	@media screen and (max-width:380px){html,body{font-size:10px !important}}
+	@media screen and (max-width:900px){html,body{font-size:10px !important}}
 	@font-face {
 	  font-family: 'iconfont';
 	  src: url('../assets/iconfont/developers/iconfont.eot');
@@ -78,7 +80,7 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-image: url(../assets/imgs/developers/banner.jpg);
-			@media (max-width: 768px) {
+			@media (max-width: 900px) {
 				height: 10rem;
 			}
 			h3{
@@ -88,7 +90,7 @@
 				color: #E4EEFF;
 				font-weight: normal;
 			}
-			@media (max-width: 768px) {
+			@media (max-width: 900px) {
 				height: 10rem;
 				h3{
 					line-height: 10rem;
@@ -101,7 +103,7 @@
 			height: 357px;
 			background-size: 100% 100%;
 			background-image: url('../assets/imgs/developers/tbg.jpg');
-			@media (max-width: 768px){
+			@media (max-width: 900px){
 				height: 24.9rem;
 				position: relative;
 			}
@@ -111,7 +113,7 @@
 				font-size: 32px;
 				margin-top: 106px;
 				text-align: center;
-				@media (max-width: 768px){
+				@media (max-width: 900px){
 					margin-top: 3.85rem;
 					font-size: 1.8rem;
 				}
@@ -124,7 +126,7 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				@media (max-width: 768px){
+				@media (max-width: 900px){
 					width: calc(100% - 3rem);
 					display: block;
 					height: 19.7rem;
@@ -145,12 +147,12 @@
 					font-weight: bold;
 					color: #333;
 					transition: all .25s ease-in-out;
-
+					cursor: pointer;
 					&:hover{
 						transform: scale(1.25);
 						color: #1346A2;
 					}
-					@media (max-width: 768px){
+					@media (max-width: 900px){
 						text-align: center;
 						width: 100%;
 						height: 6.05rem;
@@ -169,7 +171,7 @@
 		.developers-tools{
 			height: 442px;
 			overflow-y: hidden;
-			@media (max-width: 768px){
+			@media (max-width: 900px){
 				height: 35.7rem;
 			}
 
@@ -179,7 +181,7 @@
 				font-size: 32px;
 				margin-top: 83px;
 				text-align: center;
-				@media (max-width: 768px){
+				@media (max-width: 900px){
 					margin-top: 5.15rem;
 					font-size: 1.8rem;
 				}
@@ -188,12 +190,12 @@
 				list-style-type:none;
 				margin: 84px auto 0 auto;
 				padding: 0; 
-				width: 1160px;
+				width: 900px;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 				height: 111px;
-				@media (max-width: 768px) {
+				@media (max-width: 900px) {
 					width: 100%;
 					justify-content: center;
 					align-content: flex-start;
@@ -204,7 +206,7 @@
 					width: 1px;
 					height: 46px;
 					background-color: #e8e8e8;
-					@media (max-width: 768px) {
+					@media (max-width: 900px) {
 						display: none
 					}
 				}
@@ -215,7 +217,7 @@
 					position: relative;
 					justify-content: center;
 					align-items: center;
-					@media (max-width: 768px) {
+					@media (max-width: 900px) {
 						
 						width: 17.25rem;
 						height: 10rem;
@@ -237,7 +239,7 @@
 							transform: scale(1.36);
 							color: #1346A2
 						}
-						@media (max-width: 768px) {
+						@media (max-width: 900px) {
 							width: 3rem;
 							height: 3rem;
 							font-size: 3rem;
@@ -252,7 +254,7 @@
 						font-size: 1.125rem;
 						font-weight: bold;
 						bottom: -40px;
-						@media (max-width: 768px){
+						@media (max-width: 900px){
 							bottom: 2rem;
 							font-weight: normal;
 						}
@@ -264,7 +266,7 @@
 					font-size: 1.125rem;
 					font-weight: bold;
 					bottom: -40px;
-					@media (max-width: 768px){
+					@media (max-width: 900px){
 						bottom: 2rem;
 						font-weight: normal;
 					}
@@ -282,7 +284,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: 768px){
+	@media screen and (max-width: 900px){
 		.developers{
 			.developers-head{
 				background-image: url(../assets/imgs/developers/mbanner.jpg);

@@ -6,7 +6,21 @@
       <div class="fl">
         <ul class="clear header-item-list">
           <li class='header-item' v-bind:style="{'fontFamily':$i18n.locale==='cn'?'微软雅黑':''}" v-for="(headerItem, index) in headerList" :key="index" @click="clickHeader(headerItem.id)">
-            {{$t(headerItem.text)}}
+            <template v-if="headerItem.id === 0">
+              <el-dropdown @command="clickHeader">
+                <span>
+                  {{$t(headerItem.text)}}
+                  <i class="el-icon-arrow-down el-icon--right"></i>
+                </span>
+                <el-dropdown-menu slot="dropdown">
+                  
+                 <el-dropdown-item v-for="item in headerItem.submenu" :key="item.id" :command="item.id">{{$t(item.text)}}</el-dropdown-item>
+                </el-dropdown-menu>
+              </el-dropdown>
+            </template>
+            <template v-else>
+              {{$t(headerItem.text)}}
+            </template>
           </li>
         </ul>
       </div>
@@ -75,27 +89,37 @@ import cookie from '@/utils/cookie'
         langMap:{en:"English",cn:"简体中文"},
         headerList: [
         {
-          text:'header.whitepaper',
+          text:'header.research',
           id: 0,
+          submenu:[{
+            id:0.1,
+            text:'header.whitepaper',
+          },{
+            id:0.2,
+            text:'header.yellowpaper'
+          }]
+        // },{
+        //   text:'header.yellowpaper',
+        //   id:1
         },
         {
           text: 'header.news',
-          id: 1,
-        },
-        {
-          text: 'header.github',
           id: 2,
         },
         {
-          text: 'header.bounty',
+          text: 'header.github',
           id: 3,
-        // },{
-        //   text:  'header.developers',
-        //   id:4
+        },
+        {
+          text: 'header.bounty',
+          id: 4,
+        },{
+          text:  'header.developers',
+          id:5
         },
         {
           text: 'header.announcements',
-          id: 5,
+          id: 6,
         }
         ],
         menuVisible: false,
@@ -110,9 +134,14 @@ import cookie from '@/utils/cookie'
                 text: 'menu.whitepaper',
                 href: 'startHere',
                 anchorId: 'SWhitepaper'
+              },{
+                id: ' 1-2',
+                text: 'menu.yellowpaper',
+                href:'https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf',
+                anchorId:'SYellowpaper'
               },
               {
-                id: '1-2',
+                id: '1-3',
                 text: 'menu.features',
                 href: 'startHere',
                 anchorId: 'SFeatures'
@@ -218,9 +247,14 @@ import cookie from '@/utils/cookie'
                 id: '1-1',
                 text: 'menu.whitepaper',
                 href: 'startHere',
-              },
+               },{
+                id: ' 1-2',
+                text: 'menu.yellowpaper',
+                href:'https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf',
+                anchorId:'SYellowpaper'
+               },
               {
-                id: '1-2',
+                id: '1-3',
                 text: 'menu.features',
                 href: 'startHere',
                 anchorId: 'SFeatures'
@@ -412,20 +446,22 @@ import cookie from '@/utils/cookie'
         this.$router.push('/');
       },
       clickHeader(id) {
-        if (id === 0) {
+        if (id === 0.1) {
           window.location.href = this.$t('header.paper');
-        }
-        else if (id === 1) {
-          this.$router.push('/news');
+        }else if(id === 0.2){
+          window.location.href = "https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf"
         }
         else if (id === 2) {
-          window.location.href = 'https://github.com/seeleteam';
+          this.$router.push('/news');
         }
         else if (id === 3) {
+          window.location.href = 'https://github.com/seeleteam';
+        }
+        else if (id === 4) {
           window.location.href = 'https://bounty.seele.pro';
-        } else if(id === 4){
+        } else if(id === 5){
           this.$router.push('/developers')
-        }else if(id === 5){
+        }else if(id === 6){
           this.$router.push('/announcement');
         }
       },
@@ -443,6 +479,23 @@ import cookie from '@/utils/cookie'
   }
 </script>
 <style lang="less">
+.el-dropdown-menu{
+    background-color:rgba(28,28,53,0.88) !important;
+    width: 100px;
+    border-radius: 0 !important;
+    border:transparent !important;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    .el-dropdown-menu__item{
+        background-color: rgba(28,28,53,0.88)  !important;
+        color: white;
+        font-weight: normal;
+        padding: 0 10px;
+    }
+    .popper__arrow{
+      display: none !important;
+    }
+  }
   .header {
     height: 100px;
     border-bottom: 1px solid #4d4d4d;
@@ -464,13 +517,22 @@ import cookie from '@/utils/cookie'
             justify-content: space-between;
           }
     }
+    .el-dropdown{
+      color: #fff;
+      font-size: 16px;
+    }
+    // .el-dropdown-menu{
+    //   background-color: #131a2e;
+    //   color: white;
+    //   font-size: 16px;
+    // }
     .header-item {
       box-sizing: border-box;
       float: left;
       color: #fff;
       margin-top: 40px;
       font-size: 16px;
-      margin-right: 50px;
+      margin-right: 40px;
       cursor: pointer;
       &:nth-last-child(1) {
         padding: 10px 20px;

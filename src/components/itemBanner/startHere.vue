@@ -14,7 +14,7 @@
 <style scoped>
 .item-banner-wrap {
   min-width: 1160px;
-  background-image: url("../../assets/imgs/itemBanner/starthere.png");
+  background-image: url("../../assets/imgs/itemBanner/starthere.jpg");
   height: 300px;
   background-size: 100% 100%;
 }
@@ -44,7 +44,7 @@
   .item-banner-wrap {
     height: 400px;
     min-width: 100%;
-    background-image: url("../../assets/imgs/itemBannerP/startHere.png");
+    background-image: url("../../assets/imgs/itemBannerP/startHere.jpg");
     background-size: 100% 100%;
   }
   .item-masker-wrap {
@@ -68,7 +68,7 @@
   .item-banner-wrap {
     height: 200px;
     min-width: 100%;
-    background-image: url("../../assets/imgs/itemBannerP/startHere.png");
+    background-image: url("../../assets/imgs/itemBannerP/startHere.jpg");
     background-size: 100% 100%;
   }
   .mask-wrap {

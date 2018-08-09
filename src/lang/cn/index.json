@@ -5,7 +5,9 @@
         "en":"English"
     },
     "header":{
+        "research":"研究领域",
         "whitepaper":"白皮书",
+        "yellowpaper":"黄皮书",
         "news":"新闻",
         "github":"GitHub",
         "bounty":"赏金赛",
@@ -49,7 +51,7 @@
         "flexibility":"灵活性",
         "efficiency":"效率",
         "NCA":"神经共识算法",
-        "NCA_img":"/static/imgs/Algorithm_zh.png",
+        "NCA_img":"/static/imgs/Algorithm_zh.jpg",
         "NCA_Content":"元一Seele 创造的神经网络共识算法，灵感来自于人类大脑的工作机制。它将共识问题转化为异步请求，在基于“微实数”的大规模环境中处理和分类数据，保证网络中的所有节点达成共识。与现有的其它共识算法相比，神经网络共识算法不仅确保安全和低能耗，而且还拥有强大的线性扩张能力。随着网络规模增大，性能会线性加速来满足业务需求。",
         "HFN":"异构森林网络",
         "HFN_Content":"元一首先提出异构森林网络。异构森林网络是由不同子网组成的一个区块链生态系统，每个子网可以独立服务于不同的业务场景，不同链之间通过跨链协议进行交互，实现价值交换。异构森林网络安全，高效，完全兼容现有的区块链生态系统，是价值互联网的基石。",
@@ -284,6 +286,7 @@
     "menu":{
         "start":"探索元一",
         "whitepaper":"白皮书",
+        "yellowpaper":"黄皮书",
         "features":"元一亮点",
         "community":"元一社群",
         "telegram":"Telegram",
@@ -304,12 +307,18 @@
         "heading":"报头",
         "monitor":"监控",
         "tools":"工具",
-        "explore":"开发",
+        "explore":"浏览器",
         "faucet":"水龙头",
         "wallet":"钱包",
         "AT":"测试网地址",
-        "GS":"获得10Seele",
-        "OA":"一个地址只能领取一次"
+        "GS":"获得1Seele",
+        "OA":"一个地址只能领取一次",
+        "API":"API文档",
+        "start":"Seele使用指南",
+        "address":"请输入一个42位以0x开头的地址！",
+        "success":"成功！",
+        "failed":"失败！",
+        "reward":"已转  1 个Seele币!"
     },
     "ann":{
         "home":"主页",

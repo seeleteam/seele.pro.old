@@ -35,7 +35,7 @@
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/bitcoin.png" alt="bitcoin"> -->
           </a>
-          <a href="https://reddit.com/r/seelenetwork" target="_blank">
+          <a href="https://www.reddit.com/r/SeeleOfficial/" target="_blank">
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/reddit.png" alt="reddit"> -->
           </a>
@@ -44,6 +44,10 @@
             <!-- <img src="../assets/imgs/footer/github.png" alt="github"> -->
           </a>
           <a href="https://weibo.com/u/6561132287" target="_blank">
+            <div class="footer-icons-icon"></div>
+            <!-- <img src="../assets/imgs/footer/xinlang.png" alt="xinlang"> -->
+          </a>
+          <a href="https://open.kakao.com/o/gzCv6HT" target="_blank">
             <div class="footer-icons-icon"></div>
             <!-- <img src="../assets/imgs/footer/xinlang.png" alt="xinlang"> -->
           </a>
@@ -90,7 +94,10 @@ export default {
       
       a {
         display: inline-block;
-        margin: 0 20px;
+        margin: 0 17px;
+        @media screen and (max-width: 768px){
+            margin:0 20px;
+        }
         &:nth-child(1) {
           .footer-icons-icon {
             background: url('../assets/imgs/footer/footer_icons.png') no-repeat 3px -45px;
@@ -100,12 +107,6 @@ export default {
         &:nth-child(2) {
           .footer-icons-icon {
             background: url('../assets/imgs/footer/footer_icons.png') no-repeat 3px -428px;
-            background-size: 40px;
-          }
-        }
-        &:nth-child(3) {
-          .footer-icons-icon {
-            background: url('../assets/imgs/footer/footer_icons.png') no-repeat 3px -380px;
             background-size: 40px;
           }
         }
@@ -157,6 +158,13 @@ export default {
             background-size: 40px;
           }
         }
+        &:nth-child(11) {
+          .footer-icons-icon {
+            background: url('../assets/imgs/footer/footer_icons.png') no-repeat 3px -520px;
+            background-size: 40px;
+          }
+        }
+        
       }
     }
     .footer-copyright {
@@ -181,6 +189,7 @@ export default {
       }
       .footer-icons {
         padding: 10px 0;
+        text-align: left;
         img {
           width: 20px;
           height: 20px;

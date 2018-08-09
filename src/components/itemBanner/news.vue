@@ -14,7 +14,7 @@
 <style scoped>
 .item-banner-wrap {
   min-width: 1160px;
-  background-image: url("../../assets/imgs/itemBanner/news.png");
+  background-image: url("../../assets/imgs/itemBanner/news.jpg");
   height: 300px;
   background-size: 100% 100%;
 }
@@ -44,7 +44,7 @@
   .item-banner-wrap {
     height: 400px;
     min-width: 100%;
-    background-image: url("../../assets/imgs/itemBannerP/news.png");
+    background-image: url("../../assets/imgs/itemBannerP/news.jpg");
     background-size: 100% 100%;
   }
   .mask-wrap {
@@ -65,7 +65,7 @@
   .item-banner-wrap {
     height: 200px;
     min-width: 100%;
-    background-image: url("../../assets/imgs/itemBannerP/news.png");
+    background-image: url("../../assets/imgs/itemBannerP/news.jpg");
     background-size: 100% 100%;
   }
   .mask-wrap {

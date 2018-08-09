@@ -150,12 +150,18 @@
   };
 </script>
 <style lang="less">
+@media screen and(min-width: 2000px) {
+    .banner{
+      background-size: 100% !important;
+    }
+}
    .banner {
      height: 650px;
      overflow: hidden;
      z-index: 5;
      position: relative;
-     background: url('../../assets/imgs/seele_bannar.png') no-repeat;
+     background: url('../../assets/imgs/seele_bannar.jpg') no-repeat;
+     background-position: center;
      .banner-title {
        font-size: 60px;
        color: #fff;
@@ -200,7 +206,7 @@
   @media screen and (max-width: 600px ) {
     .banner {
       height: 300px;
-     background: url('../../assets/imgs/banner_phone.png') no-repeat;
+     background: url('../../assets/imgs/banner_phone.jpg') no-repeat;
       .banner-title {
         font-size: 40px;
         margin-top: 80px;

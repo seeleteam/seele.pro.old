@@ -224,7 +224,7 @@
         }
         &:nth-child(2) {
           .feature-item-left {
-            background: url('../../assets/imgs/startHere/Network.png') no-repeat;
+            background: url('../../assets/imgs/startHere/Network.jpg') no-repeat;
             background-size: 100%;
           }
           .feature-item-icons {

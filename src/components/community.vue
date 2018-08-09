@@ -39,6 +39,12 @@
             <a href="https://weibo.com/u/6561132287" target="_blank">
               <span class="community-xinlang"></span>
             </a>
+
+          </div>
+          <div class="social_icons">
+            <a href="https://open.kakao.com/o/gzCv6HT" target="_blank">
+                <span class="community-talk"></span>
+              </a>
           </div>
           <div class="faq_button_wrap">
             <router-link :to="{path: 'faq'}">
@@ -163,7 +169,10 @@ export default {
   .meetups-wrap {
     height: 655px;
     margin: 90px 0;
-    background-image: url("../assets/imgs/community/meetups.png");
+    background-image: url("../assets/imgs/community/meetups.jpg");
+    @media (max-width: 768px) {
+        background-image: url("../assets/imgs/community/Pmeetups.jpg");
+    }
     background-size: 100% 100%;
   }
   .meetups-masker-wrap {
@@ -196,7 +205,8 @@ export default {
   }
   .social_icons {
     padding-bottom: 50px;
-    text-align: center;
+    margin: 0 auto;
+    width: 1120px;
     a {
       width: 180px;
       height: 180px;
@@ -254,6 +264,10 @@ export default {
     }
     .community-xinlang {
       background-image: url(../assets/imgs/social/xinlang.png);
+      background-size: 100% 100%;
+    }
+    .community-talk {
+      background-image: url(../assets/imgs/social/talk.png);
       background-size: 100% 100%;
     }
   }
@@ -374,13 +388,15 @@ export default {
     }
     .social_icons {
       padding-bottom: 20px;
-      text-align: center;
+      width: calc(85% + 20px);
+     
       a {
-        width: 17%;
+        width: calc(20% - 4px);
         height: 60px;
         display: inline-block;
         text-align: center;
         margin: 0;
+
         &:hover {
           box-shadow: 0 0 10px #ccc;
           transition: 0.3s all linear;
@@ -516,9 +532,10 @@ export default {
     }
     .social_icons {
       padding-bottom: 10px;
-      text-align: center;
+       width: calc(85% + 20px);
+       margin: 0 auto;
       a {
-        width: 17%;
+        width: calc(20% - 4px);
         height: 60px;
         display: inline-block;
         text-align: center;

@@ -18,7 +18,7 @@
             <div class="tech_box">
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/lot.png" :alt="$t('eco.IOT')">
+                  <img src="../assets/imgs/ecological/lot.jpg" :alt="$t('eco.IOT')">
                 </div>
                 <div class="tech_title">{{$t('eco.IOT')}}</div>
                 <div class="tech_info">
@@ -28,7 +28,7 @@
               </div>
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/Social Application .png" :alt="$t('eco.SA')">
+                  <img src="../assets/imgs/ecological/Social Application .jpg" :alt="$t('eco.SA')">
                 </div>
                 <div class="tech_title">{{$t('eco.SA')}}</div>
                 <div class="tech_info">
@@ -38,7 +38,7 @@
               </div>
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/Blockchain Game.png" :alt="$t('eco.BG')">
+                  <img src="../assets/imgs/ecological/Blockchain Game.jpg" :alt="$t('eco.BG')">
                 </div>
                 <div class="tech_title">{{$t('eco.BG')}}</div>
                 <div class="tech_info">
@@ -50,7 +50,7 @@
             <div class="tech_box">
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/e-governmet.png" :alt="$t('eco.EG')">
+                  <img src="../assets/imgs/ecological/e-governmet.jpg" :alt="$t('eco.EG')">
                 </div>
                 <div class="tech_title">{{$t('eco.EG')}}</div>
                 <div class="tech_info">
@@ -60,7 +60,7 @@
               </div>
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/fintech.png" alt="fintech">
+                  <img src="../assets/imgs/ecological/fintech.jpg" alt="fintech">
                 </div>
                 <div class="tech_title">{{$t('eco.FIN')}}</div>
                 <div class="tech_info">
@@ -70,7 +70,7 @@
               </div>
               <div class="tech_item tech_box_hover">
                 <div class="tech_img">
-                  <img src="../assets/imgs/ecological/healthcare.png" alt="healthcare">
+                  <img src="../assets/imgs/ecological/healthcare.jpg" alt="healthcare">
                 </div>
                 <div class="tech_title">{{$t('eco.HE')}}</div>
                 <div class="tech_info">

@@ -50,7 +50,7 @@
           <div class="features_box_wrap">
             <div class="wrap features_box">
               <div class="features_img">
-                <img src="../assets/imgs/startHere/vtp.png" alt="">
+                <img src="../assets/imgs/startHere/vtp.jpg" alt="">
               </div>
               <div class="features_info_wrap features_info_wrap_r">
                   <div class="features_info_title">{{$t('start.VTP')}}</div>
