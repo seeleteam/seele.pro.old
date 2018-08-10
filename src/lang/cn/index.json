@@ -13,7 +13,8 @@
         "bounty":"赏金赛",
         "developers":"开发者",
         "announcements":"公告",
-        "paper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_tech_whitepaper_CN.pdf"
+        "paper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_tech_whitepaper_CN.pdf",
+        "ypaper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf"
     },
     "banner":{
         "seele":"元一Seele",

@@ -132,13 +132,15 @@ import cookie from '@/utils/cookie'
               {
                 id: '1-1',
                 text: 'menu.whitepaper',
-                href: 'startHere',
-                anchorId: 'SWhitepaper'
+                href: 'header.paper',
+                anchorId: 'SWhitepaper',
+                type:1
               },{
                 id: ' 1-2',
                 text: 'menu.yellowpaper',
-                href:'https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf',
-                anchorId:'SYellowpaper'
+                href:'header.ypaper',
+                anchorId:'SYellowpaper',
+                type:1
               },
               {
                 id: '1-3',
@@ -246,12 +248,14 @@ import cookie from '@/utils/cookie'
               {
                 id: '1-1',
                 text: 'menu.whitepaper',
-                href: 'startHere',
+                href: 'header.paper',
+                type:1
                },{
                 id: ' 1-2',
                 text: 'menu.yellowpaper',
-                href:'https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf',
-                anchorId:'SYellowpaper'
+                href:'header.ypaper',
+                anchorId:'SYellowpaper',
+                type:1
                },
               {
                 id: '1-3',
@@ -449,7 +453,7 @@ import cookie from '@/utils/cookie'
         if (id === 0.1) {
           window.location.href = this.$t('header.paper');
         }else if(id === 0.2){
-          window.location.href = "https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf"
+          window.location.href = this.$t('header.ypaper')
         }
         else if (id === 2) {
           this.$router.push('/news');
