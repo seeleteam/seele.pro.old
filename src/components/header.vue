@@ -6,7 +6,7 @@
       <div class="fl">
         <ul class="clear header-item-list">
           <li class='header-item' v-bind:style="{'fontFamily':$i18n.locale==='cn'?'微软雅黑':''}" v-for="(headerItem, index) in headerList" :key="index" @click="clickHeader(headerItem.id)">
-            <template v-if="headerItem.id === 0">
+            <!-- <template v-if="headerItem.id === 0">
               <el-dropdown @command="clickHeader">
                 <span>
                   {{$t(headerItem.text)}}
@@ -17,8 +17,8 @@
                  <el-dropdown-item v-for="item in headerItem.submenu" :key="item.id" :command="item.id">{{$t(item.text)}}</el-dropdown-item>
                 </el-dropdown-menu>
               </el-dropdown>
-            </template>
-            <template v-else>
+            </template> -->
+            <template>
               {{$t(headerItem.text)}}
             </template>
           </li>
@@ -91,13 +91,13 @@ import cookie from '@/utils/cookie'
         {
           text:'header.research',
           id: 0,
-          submenu:[{
-            id:0.1,
-            text:'header.whitepaper',
-          },{
-            id:0.2,
-            text:'header.yellowpaper'
-          }]
+          // submenu:[{
+          //   id:0.1,
+          //   text:'header.whitepaper',
+          // },{
+          //   id:0.2,
+          //   text:'header.yellowpaper'
+          // }]
         // },{
         //   text:'header.yellowpaper',
         //   id:1
@@ -147,7 +147,11 @@ import cookie from '@/utils/cookie'
                 text: 'menu.features',
                 href: 'startHere',
                 anchorId: 'SFeatures'
-              },
+              },{
+                id:'1-4',
+                text:'menu.research',
+                href:"research"
+              }
             ]
           },
           // {
@@ -262,7 +266,11 @@ import cookie from '@/utils/cookie'
                 text: 'menu.features',
                 href: 'startHere',
                 anchorId: 'SFeatures'
-              },
+              },{
+                id:'1-4',
+                text:'menu.research',
+                href:"research"
+              }
             ]
           },
           // {
@@ -450,11 +458,14 @@ import cookie from '@/utils/cookie'
         this.$router.push('/');
       },
       clickHeader(id) {
-        if (id === 0.1) {
-          window.location.href = this.$t('header.paper');
-        }else if(id === 0.2){
-          window.location.href = this.$t('header.ypaper')
+        if(id === 0){
+          this.$router.push({name:"research"})
         }
+        // if (id === 0.1) {
+        //   window.location.href = this.$t('header.paper');
+        // }else if(id === 0.2){
+        //   window.location.href = this.$t('header.ypaper')
+        // }
         else if (id === 2) {
           this.$router.push('/news');
         }
@@ -462,7 +473,7 @@ import cookie from '@/utils/cookie'
           window.location.href = 'https://github.com/seeleteam';
         }
         else if (id === 4) {
-          window.location.href = 'https://bounty.seele.pro';
+          window.location.href = this.$t('header.bountyURL');
         } else if(id === 5){
           this.$router.push('/developers')
         }else if(id === 6){

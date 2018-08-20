@@ -10,7 +10,8 @@
         "yellowpaper":"黄皮书",
         "news":"新闻",
         "github":"GitHub",
-        "bounty":"赏金赛",
+        "bounty":"活动",
+        "bountyURL":"https://seele.pro/SeeleTestNet/CN/index-cn.html",
         "developers":"开发者",
         "announcements":"公告",
         "paper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_tech_whitepaper_CN.pdf",
@@ -300,7 +301,8 @@
         "AE":"应用生态",
         "AU":"关于我们",
         "leader":"领导团队",
-        "GP":"国际布局"
+        "GP":"国际布局",
+        "research":"研究领域"
     },
     "develop":{
         "developers":"开发者",
@@ -345,5 +347,35 @@
         "san":"美国，旧金山",
         "app":"元一洲际品鉴会伦敦站",
         "UK":"英国，伦敦"
+    },
+    "research":{
+        "banner1":"SEELE",
+        "banner2":"研究领域",
+        "roadmap":"研究路线图",
+        "dstep1":"2018 Q1",
+        "dstep2":"Aug.10 2018",
+        "dstep3":"Sep. 2018",
+        "dstep4":"持续研究",
+        "step1":"白皮书",
+        "step2":"黄皮书<br/>(密码学)",
+        "step3":"黄皮书<br/>(网络传输)",
+        "step4":"",
+        "whitepaper":"SEELE 白皮书",
+        "yellowpaper":"黄皮书",
+        "cryptography":{
+            "title":"密码学",
+            "content":[{
+                "name":"Seele",
+                "content":"多重椭圆曲线数字签名方法"
+            },{
+                "name":"摘要",
+                "content":"Seele提出多重椭圆曲线数字签名算法（MECDSA），通过椭圆曲线数量和六个参数的动态调整，实现了适用于不同应用场景和安全需求的动态签名机制。"
+            }]
+        },
+        "network":"网络传输",
+        "consensus":"共识算法",
+        "distributed":"分布式系统",
+        "more":"更多",
+        "latest":"最新新闻"
     }
 }

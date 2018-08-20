@@ -10,7 +10,8 @@
         "yellowpaper":"Yellowpaper",
         "news":"News",
         "github":"GitHub",
-        "bounty":"Bounty",
+        "bounty":"Event",
+        "bountyURL":"https://seele.pro/SeeleTestNet/EN/index-en.html",
         "developers":"Developers",
         "announcements":"Announcements",
         "paper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_White_Paper_English_v3.1.pdf",
@@ -301,7 +302,8 @@
         "AE":"App Ecosystem",
         "AU":"About Us",
         "leader":"Leadership",
-        "GP":"Global Presence"
+        "GP":"Global Presence",
+        "research":"Research"
     },
     "develop":{
         "developers":"DEVELOPERS",
@@ -346,6 +348,37 @@
         "san":"San Francisco, United States",
         "app":"Seele Intercontinental Appraisal",
         "UK":"London, UK"
+
+    },
+    "research":{
+        "banner1":"RESEARCH",
+        "banner2":"Seele Research Lab",
+        "roadmap":"ROADMAP",
+        "dstep1":"2018 Q1",
+        "dstep2":"Aug.10 2018",
+        "dstep3":"Sep. 2018",
+        "dstep4":"In Researching",
+        "step1":"Whitepaper",
+        "step2":"Yellowpaper<br/>(Cryptography)",
+        "step3":"Yellowpaper<br/>(Network)",
+        "step4":"",
+        "whitepaper":"WHITEPAPER",
+        "yellowpaper":"YELLOWPAPER",
+        "cryptography":{
+            "title":"Cryptography",
+            "content":[{
+                "name":"Seele",
+                "content":"A secure Multiple elloptic Curves Digital signature Algorithm for Blockchain"
+            },{
+                "name":"Abstract",
+                "content":"Seele proposes a multiple elliptic curves digital signature algorithm (MECDSA), which allows not only for setting the number of elliptic…"
+            }]
+        },
+        "network":"Network",
+        "consensus":"Consensus",
+        "distributed":"Distributed system",
+        "more":"MORE",
+        "latest":"LATEST NEWS"
 
     }
 }

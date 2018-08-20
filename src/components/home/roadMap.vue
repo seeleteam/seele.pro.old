@@ -159,7 +159,7 @@
       background: #759ef4;
       position: absolute;
       left: 0;
-      top: 209px;
+      top: 216px;
     }
     .step-box {
       position: relative;

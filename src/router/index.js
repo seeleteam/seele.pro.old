@@ -15,6 +15,7 @@ import stateDetail from '@/components/stateDetail'
 import announcement from '@/components/announcement'
 import developers from '@/components/developers'
 import faucet from '@/components/faucet'
+import research from "@/components/research"
 
 Vue.use(Router)
 
@@ -87,6 +88,10 @@ export default new Router({
       path: '/faucet',
       name: 'faucet',
       component:faucet
+    },{
+      path:"/research",
+      name:"research",
+      component:research
     }
   ]
 })
