@@ -55,7 +55,6 @@
 	}
 </script>
 <style lang="less">
-	@media screen and (max-width:900px){html,body{font-size:10px !important}}
 	@font-face {
 	  font-family: 'iconfont';
 	  src: url('../assets/iconfont/developers/iconfont.eot');
@@ -80,9 +79,6 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-image: url(../assets/imgs/developers/banner.jpg);
-			@media (max-width: 900px) {
-				height: 10rem;
-			}
 			h3{
 				font-size: 36px;
 				text-align: center;
@@ -91,10 +87,10 @@
 				font-weight: normal;
 			}
 			@media (max-width: 900px) {
-				height: 10rem;
+				height: 6.25rem;
 				h3{
-					line-height: 10rem;
-					font-size: 1.8rem
+					line-height: 6.25rem;
+					font-size: 1.13rem
 				}
 			}
 		}
@@ -104,7 +100,7 @@
 			background-size: 100% 100%;
 			background-image: url('../assets/imgs/developers/tbg.jpg');
 			@media (max-width: 900px){
-				height: 24.9rem;
+				height: 15.56rem;
 				position: relative;
 			}
 			h3{
@@ -114,8 +110,8 @@
 				margin-top: 106px;
 				text-align: center;
 				@media (max-width: 900px){
-					margin-top: 3.85rem;
-					font-size: 1.8rem;
+					margin-top: 2.41rem;
+					font-size: 1.13rem;
 				}
 			}
 			.heading{
@@ -129,7 +125,7 @@
 				@media (max-width: 900px){
 					width: calc(100% - 3rem);
 					display: block;
-					height: 19.7rem;
+					height: 11.34rem;
 					margin-top: 10px;
 				}
 				div.line{
@@ -155,9 +151,9 @@
 					@media (max-width: 900px){
 						text-align: center;
 						width: 100%;
-						height: 6.05rem;
-						line-height: 6.05rem;
-						font-size: 1.7rem;
+						height: 3.54rem;
+						line-height: 3.54rem;
+						font-size: 1.06rem;
 						font-weight: normal;
 						&:nth-child(4){
 							border-width: 1px 0;
@@ -172,7 +168,7 @@
 			height: 442px;
 			overflow-y: hidden;
 			@media (max-width: 900px){
-				height: 35.7rem;
+				height: 22.31rem;
 			}
 
 			h3{
@@ -182,8 +178,8 @@
 				margin-top: 83px;
 				text-align: center;
 				@media (max-width: 900px){
-					margin-top: 5.15rem;
-					font-size: 1.8rem;
+					margin-top: 3.22rem;
+					font-size: 1.13rem;
 				}
 			}
 			ul.icon-list{
@@ -200,7 +196,7 @@
 					justify-content: center;
 					align-content: flex-start;
 					flex-wrap: wrap;
-					margin-top: 3.1rem
+					margin-top: 1.94rem
 				}
 				li.line{
 					width: 1px;
@@ -219,8 +215,8 @@
 					align-items: center;
 					@media (max-width: 900px) {
 						
-						width: 17.25rem;
-						height: 10rem;
+						width: 10.78rem;
+						height: 6.25rem;
 					    border: solid 1px #e3e3e3;
 					    border-collapse: collapse;
 					    align-items: flex-start;
@@ -240,11 +236,11 @@
 							color: #1346A2
 						}
 						@media (max-width: 900px) {
-							width: 3rem;
-							height: 3rem;
-							font-size: 3rem;
+							width: 1.78rem;
+							height: 1.88rem;
+							font-size: 1.88rem;
 							line-height: 3rem;
-							margin-top: 2.4rem;
+							margin-top: .8rem;
 						}
 
 					}
@@ -255,22 +251,23 @@
 						font-weight: bold;
 						bottom: -40px;
 						@media (max-width: 900px){
-							bottom: 2rem;
+							bottom: 1.13rem;
+							font-size: .94rem;
 							font-weight: normal;
 						}
 					}
 				}
-				li.box::after{
-					position: absolute;
-					color:#202020;
-					font-size: 1.125rem;
-					font-weight: bold;
-					bottom: -40px;
-					@media (max-width: 900px){
-						bottom: 2rem;
-						font-weight: normal;
-					}
-				}
+				// li.box::after{
+				// 	position: absolute;
+				// 	color:#202020;
+				// 	font-size: 1.125rem;
+				// 	font-weight: bold;
+				// 	bottom: -40px;
+				// 	@media (max-width: 900px){
+				// 		bottom: 1.13rem;
+				// 		font-weight: normal;
+				// 	}
+				// }
 				li.box-1{
 					margin: 0 -1px -1px 0;
 				}

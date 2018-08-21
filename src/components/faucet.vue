@@ -63,13 +63,11 @@
 	}
 </script>
 <style lang="less">
-	@media screen and (max-width:900px){html,body{font-size:10px !important}}
-	@media screen and (max-width:380px){html,body{font-size:10px !important}}
 	.faucet{
 		height: 600px;
 		font-family:AvenirLT-Heavy;
 		@media (max-width: 900px){
-				height: 39rem;
+				height: 24.38rem;
 		}
 		h3{
 			font-size: 32px;
@@ -77,8 +75,8 @@
 			text-align: center;
 			margin-top: 117px;
 			@media (max-width: 900px)  {
-				  margin-top: 4.45rem;
-				  font-size: 1.8rem;
+				  margin-top: 2.78rem;
+				  font-size: 1.13rem;
 			}  
 		}
 		p.title{
@@ -88,8 +86,8 @@
 			text-align: center;
 			margin-top: 120px;
 			@media (max-width: 900px){
-				font-size: 1.5rem;
-				margin-top: 5.55rem;
+				font-size: .94rem;
+				margin-top: 3.47rem;
 			}
 		}
 		input{
@@ -108,9 +106,9 @@
 				// width: 36rem;
 				// height: 5rem;
 				font-size: 1rem;
-				width: 29rem;
-				height: 4rem;
-				margin-top: 2rem;
+				width: 18.13rem;
+				height: 2.5rem;
+				margin-top: .94rem;
 			}
 		}
 		input:focus{
@@ -122,8 +120,8 @@
 			margin-top: 26px;
 			text-align: center;
 			@media (max-width: 900px){
-				font-size: 1.4rem;
-				margin-top: 1.4rem;
+				font-size: .88rem;
+				margin-top: .88rem;
 			}
 		}
 		.el-button{
@@ -131,7 +129,7 @@
 			margin-top: 100px;
 			display: block;
 			@media (max-width: 900px){
-				margin-top: 5rem;
+				margin-top: 2.25rem;
 			}
 
 		}

@@ -25,7 +25,7 @@
             <ul>
                 <li v-for="(item, index) in yellowpaper"  @click="openYellowPaper(item.url)" :key="index">
                     <h3>{{$t(item.title)}}</h3>
-                    <template v-if="item.content instanceof Array " >
+                    <template v-if='typeof item.content !== "string"' >
                         <div  v-for="(sub, index) in item.content" :key="index">
                             <p class="title">{{$t(sub.name)}}:&nbsp;&nbsp;</p>
                             <p class="content"> {{$t(sub.content)}}</p>
@@ -98,7 +98,7 @@ export default {
         },
         openYellowPaper(url){
             if(url){
-                window.open(this.$t(url), '_self')
+                window.open(this.$t(url))
             }
         },
         openNews(){
