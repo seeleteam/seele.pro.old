@@ -15,7 +15,8 @@
         "developers":"开发者",
         "announcements":"公告",
         "paper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_tech_whitepaper_CN.pdf",
-        "ypaper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf"
+        "ypaper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf",
+        "ynpaper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Network-v1.0.pdf"
     },
     "banner":{
         "seele":"元一Seele",
@@ -353,8 +354,8 @@
         "banner2":"研究领域",
         "roadmap":"研究路线图",
         "dstep1":"2018 Q1",
-        "dstep2":"Aug.10 2018",
-        "dstep3":"Sep. 2018",
+        "dstep2":"2018.08.10",
+        "dstep3":"2018.09.05",
         "dstep4":"持续研究",
         "step1":"白皮书",
         "step2":"黄皮书<br/>(密码学)",
@@ -372,7 +373,16 @@
                 "content":"Seele提出多重椭圆曲线数字签名算法（MECDSA），通过椭圆曲线数量和六个参数的动态调整，实现了适用于不同应用场景和安全需求的动态签名机制。"
             }]
         },
-        "network":"网络传输",
+        "network":{
+            "title":"网络传输",
+            "content":[{
+                "name":"Seele",
+                "content":"区块链网络中消息传播的一种加速方法"
+            },{
+                "name":"摘要",
+                "content":"通过选择节点的近邻，使消息于短时间内在整个网络中传播。该方法以传输延迟来标识节点到邻居的距离，延迟越低则邻居越近。"
+            }]
+        },
         "consensus":"共识算法",
         "distributed":"分布式系统",
         "more":"更多",

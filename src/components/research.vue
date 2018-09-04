@@ -80,8 +80,15 @@ export default {
                     content:"research.cryptography.content[1].content"
                 }]
             },{
-                title:"research.network",
-                content:"research.dstep4"
+                title:"research.network.title",
+                url:"header.ynpaper",
+                content:[{
+                    name:"research.network.content[0].name",
+                    content:"research.network.content[0].content",
+                },{
+                    name:"research.network.content[1].name",
+                    content:"research.network.content[1].content"
+                }],
             },{
                 title:"research.consensus",
                 content:"research.dstep4"

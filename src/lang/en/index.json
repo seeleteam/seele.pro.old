@@ -15,7 +15,8 @@
         "developers":"Developers",
         "announcements":"Announcements",
         "paper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_White_Paper_English_v3.1.pdf",
-        "ypaper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf"
+        "ypaper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Cryptography-Controlled.pdf",
+        "ynpaper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele-yellow+paper-Network-v1.0.pdf"
     },
     "banner":{
         "seele":"Seele",
@@ -356,7 +357,7 @@
         "roadmap":"ROADMAP",
         "dstep1":"2018 Q1",
         "dstep2":"Aug.10 2018",
-        "dstep3":"Sep. 2018",
+        "dstep3":"Sep.5 2018",
         "dstep4":"In Researching",
         "step1":"Whitepaper",
         "step2":"Yellowpaper<br/>(Cryptography)",
@@ -374,7 +375,16 @@
                 "content":"Seele proposes a multiple elliptic curves digital signature algorithm (MECDSA), which allows not only for setting the number of elliptic…"
             }]
         },
-        "network":"Network",
+        "network":{
+            "title":"Network",
+            "content":[{
+                "name":"Seele",
+                "content":"An Accelerated Method for Message Propagation in Blockchain Networks"
+            },{
+                "name":"Abstract",
+                "content":"This paper proposes a method that selects a node’s closest neighbors to make messages propagate in the whole network in an optimal time. "
+            }]
+        },
         "consensus":"Consensus",
         "distributed":"Distributed system",
         "more":"MORE",
