@@ -111,7 +111,7 @@ import cookie from '@/utils/cookie'
           id: 3,
         },
         {
-          text: 'header.bounty',
+          text: 'header.community',
           id: 4,
         },{
           text:  'header.developers',
@@ -473,7 +473,7 @@ import cookie from '@/utils/cookie'
           window.location.href = 'https://github.com/seeleteam';
         }
         else if (id === 4) {
-          window.location.href = this.$t('header.bountyURL');
+          window.location.href = this.$t('header.communityURL');
         } else if(id === 5){
           this.$router.push('/developers')
         }else if(id === 6){

@@ -11,7 +11,9 @@
         "news":"News",
         "github":"GitHub",
         "bounty":"Event",
+        "community":"Community",
         "bountyURL":"https://seele.pro/SeeleTestNet/EN/index-en.html",
+        "communityURL":"./community",
         "developers":"Developers",
         "announcements":"Announcements",
         "paper":"https://s3.ap-northeast-2.amazonaws.com/wp.s3.seele.pro/Seele_White_Paper_English_v3.1.pdf",
@@ -382,7 +384,7 @@
                 "content":"An Accelerated Method for Message Propagation in Blockchain Networks"
             },{
                 "name":"Abstract",
-                "content":"This paper proposes a method that selects a node’s closest neighbors to make messages propagate in the whole network in an optimal time. "
+                "content":"This paper proposes a method that selects a node's closest neighbors to make messages propagate in the whole network in time."
             }]
         },
         "consensus":"Consensus",
