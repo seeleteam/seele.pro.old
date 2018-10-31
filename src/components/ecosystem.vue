@@ -87,7 +87,7 @@
 </template>
 <script>
 import Header from "./header";
-import Ecosystem from "./itemBanner/Ecosystem";
+import Ecosystem from "./itemBanner/ecosystem";
 import ECO from "./home/eco";
 import Footer from "./footer";
 import { appliedEcology1 } from "../json-data/ecology";

@@ -14,7 +14,7 @@
           <div class="step-date">2018 Q2</div>
           <div class="step-info">{{$t('map.Q2')}}</div>
         </div>
-        <div class="step-three">
+        <div class="step-three step-before">
           <i></i>
           <div class="step-date">2018 Q3</div>
           <div class="step-info">{{$t('map.Q3')}}</div>
@@ -159,7 +159,7 @@
       background: #759ef4;
       position: absolute;
       left: 0;
-      top: 216px;
+      top: 209px;
     }
     .step-box {
       position: relative;
@@ -229,7 +229,9 @@
         border-radius: 50%;
         top: 40px;
       }
-      .step-4, .step-5, .step-6, .step-7, .step-8, .step-9, .step-10, .step-11, .step-12, .step-13, .step-14, .step-15 {
+      //.step-4, .step-5, .step-6, 
+      .step-7, .step-8, .step-9, 
+      .step-10, .step-11, .step-12, .step-13, .step-14, .step-15 {
         background: #ccc;
       }
       .step-1 {
