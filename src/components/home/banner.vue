@@ -1,13 +1,14 @@
 <!-- 新闻 -->
 <template>
     <div class="banner bg-black">
-      <div class="canvas-box">
+      <!-- <div class="canvas-box">
           <canvas ref="canvas" id="canvas" style="background: rgba(255,255,155,0)">你的浏览器不支持canvas</canvas>
-      </div>
+      </div> -->
       <div class="wrap">
-        <div class="banner-title">{{this.$t('banner.seele')}}<br>{{this.$t('banner.blockchain')}}</div>
+        <!-- <div class="banner-title">{{this.$t('banner.seele')}}<br>{{this.$t('banner.blockchain')}}</div> -->
         <div class="banner-des">
             {{this.$t('banner.BIVF')}}
+            <!-- Seele Driven Industry Revolution -->
         </div>
         <!-- <iframe class="show-sm banner-video-sm" width="300" height="300" src="https://www.youtube.com/embed/j8lPvUGySwo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         <!-- <div class="watch-video show-lg" @click="dialogTableVisible = true">Watch Video</div> -->
@@ -160,7 +161,8 @@
      overflow: hidden;
      z-index: 5;
      position: relative;
-     background: url('../../assets/imgs/seele_bannar.jpg') no-repeat;
+//     background: url('../../assets/imgs/seele_bannar.jpg') no-repeat;
+     background: url('../../assets/imgs/banner_pc.jpg') no-repeat;
      background-position: center;
      .banner-title {
        font-size: 60px;
@@ -171,10 +173,10 @@
      }
      .banner-des {
        color: #fff;
-       margin-top: 30px;
+       margin-top: 580px;
        font-size: 40px;
        text-align: center;
-       font-weight: 300;
+       font-weight: 600;
        letter-spacing: 1px;
      }
      .watch-video {
@@ -206,16 +208,20 @@
   @media screen and (max-width: 600px ) {
     .banner {
       height: 300px;
-     background: url('../../assets/imgs/banner_phone.jpg') no-repeat;
+    //background: url('../../assets/imgs/banner_phone.jpg') no-repeat;
+     background: url('../../assets/imgs/kv-01_03.jpg') no-repeat;
+         background-size: contain;
       .banner-title {
         font-size: 40px;
         margin-top: 80px;
+        
       }
       .banner-title, .banner-des {
         text-align: center;
       }
       .banner-des {
         font-size: 18px;
+            margin-top: 250px;
       }
       .watch-video {
         margin: 100px auto;
