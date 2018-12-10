@@ -31,7 +31,7 @@
             <img class="representative-img" src="../../assets/imgs/logo/cos_logo.jpg" alt="image">
           </div>
           <div v-if="step === 3">
-            <img class="representative-img" src="../../assets/imgs/logo/seele_logo.jpg" alt="image">
+            <img class="representative-img" src="../../assets/imgs/logo/seele_h_black.svg" alt="image">
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
                   <img class="representative-img" src="../../assets/imgs/logo/cos_logo.jpg" alt="image">
                 </div>
                 <div v-if="index === 3">
-                  <img class="representative-img" src="../../assets/imgs/logo/seele_logo.jpg" alt="image">
+                  <img class="representative-img" src="../../assets/imgs/logo/seele_h_black.svg" alt="image">
                 </div>
               </div>
             </div>

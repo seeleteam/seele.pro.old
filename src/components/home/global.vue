@@ -94,6 +94,7 @@ export default {
       .global-1, .global-2, .global-3, .global-4 {
         position: absolute;
         text-align: center;
+        height: 77px;
         .global-address {
           font-size: 20px;
           color: #000;
@@ -129,18 +130,25 @@ export default {
       .global-1 {
         left: 853px;
         top: 127px;
+        
+        width: 153.45px;
       }
       .global-2 {
         left: 75px;
         top: 79px;
+        width: 180px;
       }
       .global-3 {
         left: 496px;
         top: 33px;
+
+        width: 105.64px;
       }
       .global-4 {
         left: 860px;
         top: 211px;
+
+        width: 91.19px;
       }
     }
   }

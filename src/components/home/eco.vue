@@ -3,7 +3,7 @@
     <div class="box-title">{{$t('ecosystem.TE')}}</div>
     <div class="eco">
       <div class="wrap">
-        <div class="eco-wrap">
+        <div :class="['eco-wrap',this.$i18n.locale === 'cn'?'eco-cn':'']">
           <div class="layout-1">
             <div class="layout-title">{{$t('ecosystem.academia')}}</div>
             <div class="layout-info">{{$t('ecosystem.Acade-a')}}
@@ -101,16 +101,47 @@
     }
     .layout-2 {
       left: 197px;
-      top: 112px;
+      top: 99px;
+
+      // width: 430.39px;
+      // height: 200px;
+      // overflow: hidden;
     }
     .layout-3 {
       left: 584px;
       top: 91px;
+      // width: 398.44px;
+      // height: 200px;
     }
     .layout-4 {
       left: 929px;
-      top: 233px;
-    }
+      top: 235px;
+    }  
+  }
+  .eco-cn{
+      .layout-1 {
+        width: 320px;
+        left: 4px;
+        top: 214px;
+      }
+      .layout-2 {
+        left: 262px;
+        top: 100px;
+
+        // width: 430.39px;
+        // height: 200px;
+        // overflow: hidden;
+      }
+      .layout-3 {
+        left: 584px;
+        top: 74px;
+        // width: 398.44px;
+        // height: 200px;
+      }
+      .layout-4 {
+        left: 929px;
+        top: 235px;
+      }   
   }
   @media screen and (min-width: 900px) {
     .eco-div {

@@ -5,9 +5,10 @@
         <div class="box-title">{{$t('leadership.leadership')}}</div>
         <div class="team-box">
           <a class="team-item" :href="teamItem.linkedin" v-for="(teamItem, index) in teamList" :key="index">
-            <img v-if="index === 0" class="team-img" src="../../assets/imgs/team/ceo.jpg">
-            <img v-else-if="index === 1" class="team-img" src="../../assets/imgs/team/coo.jpg">
-            <img v-else class="team-img" src="../../assets/imgs/team/scientist.jpg">
+            <img v-if="index === 0" class="team-img" src="../../assets/imgs/team/ceo.jpg" >
+            <img v-else-if="index === 1" class="team-img" src="../../assets/imgs/team/scientist.jpg">
+            <img v-else-if="index === 2" class="team-img" alt="" src="../../assets/imgs/team/lws.jpg">
+            <img v-else class="team-img" src="../../assets/imgs/team/coo.jpg">
             <div class="clear team-box-sm">
               <div class="team-name">{{$t(teamItem.name)}}</div>
               <div class="team-position">{{$t(teamItem.position)}}</div>
@@ -46,18 +47,26 @@
           },
           {
             src: '',
-            name: 'leadership.DNS',
-            position: 'leadership.COO',
-            des: 'leadership.SIn',
-            linkedin: 'https://www.linkedin.com/in/nicholas-s-19626a1/',
-          },
-          {
-            src: '',
             name: 'leadership.DWB',
             position: 'leadership.scientist',
             des: 'leadership.SId',
             linkedin: 'https://www.linkedin.com/in/biweicn/',
           },
+            {
+            src: '',
+            name: 'leadership.LWS',
+            position: 'leadership.CTO',
+            des: 'leadership.Sdv',
+            linkedin: 'https://www.linkedin.com/in/wensiliu',
+          },
+          {
+            src: '',
+            name: 'leadership.DNS',
+            position: 'leadership.COO',
+            des: 'leadership.SIn',
+            linkedin: 'https://www.linkedin.com/in/nicholas-s-19626a1/',
+          },
+
         ],
       }
     }
@@ -85,7 +94,8 @@
           }
           .team-img {
             width: 100%;
-            height: 200px;
+           // height: 200px;
+           height: 146px;
             background: #ccc;
           }
           .team-name {
@@ -135,7 +145,9 @@
                 margin-top: 30px;
               }
             }
-            
+            .team-img {
+              height: 200px;
+              }
             .team-box-sm {
               padding: 15px 0;
               vertical-align: middle;

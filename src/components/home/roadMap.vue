@@ -2,7 +2,7 @@
   <div class="road-map" id="roadmap">
     <div class="box-title road-map-title">{{$t('map.roadmap')}}</div>
     <div class="wrap show-lg">
-      <div class="road-line"></div> 
+      <div class="road-line" :style="{top:this.$i18n.locale==='cn'?'215px':'209px'}"></div> 
       <div class="step-box">
         <div class="step-one step-before">
           <i></i>
@@ -139,7 +139,7 @@
           },
         }
       }
-    }
+    },
   }
 </script>
 <style lang="less">
@@ -159,7 +159,7 @@
       background: #759ef4;
       position: absolute;
       left: 0;
-      top: 209px;
+      // top: 209px;
     }
     .step-box {
       position: relative;

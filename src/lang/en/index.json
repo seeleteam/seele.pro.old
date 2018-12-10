@@ -82,14 +82,17 @@
     "leadership":{
         "leadership":"LEADERSHIP",
         "DMZ":"Dr. Maolin Zheng",
+        "LWS":"Wensi Liu",
         "DNS":"Dr. Nick Smith",
         "DWB":"Dr. Wei Bi",
+        "CTO":"Chief Architect",
         "CEO":"CEO",
         "SR":"Seele Realize",
         "COO":"COO",
         "SIn":"Seele Industrialize",
         "SId":"Seele Idealize",
-        "scientist":"Scientist"
+        "scientist":"Scientist",
+        "Sdv":"Seele Energize"
     },
     "global":{
         "GP":"GLOBAL PRESENCE",

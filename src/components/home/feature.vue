@@ -65,7 +65,7 @@
       padding: 90px;
       .feature-item {
         width: 100%;
-        height: 400px;
+        height: 420px;
         margin-bottom: 40px;
         display: flex;
         background: #fff;

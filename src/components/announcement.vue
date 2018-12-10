@@ -9,7 +9,9 @@
                 <!-- <el-breadcrumb-item :to="{ path: '/community' }">COMMUNITY</el-breadcrumb-item> -->
                 <el-breadcrumb-item>{{$t('ann.announcement')}}</el-breadcrumb-item>
               </el-breadcrumb>
-              <div class="box-title announcement-title">{{$t('ann.title')}}</div>
+              <article v-html="content"></article>
+              <!--2018/11/20日注释，将公告改为郑博士的一封信-->
+              <!-- <div class="box-title announcement-title">{{$t('ann.title')}}</div>
 
               <div class="news_detail_header">
                 <p class="news_detail_time">{{$t('ann.instruction')}}</p>
@@ -17,7 +19,7 @@
               <div class="announcement-box" v-for="item in announcementList" id="item.id" :key="item.id">
                   <p class="announcement-box-title">{{$t(item.question)}}</p>
                   <p class="announcement-box-info" v-html="$t(item.answer)"></p>
-              </div>
+              </div> -->
           </div>
       </div>
       <Footer></Footer>
@@ -26,11 +28,12 @@
 <script>
 import Header from "./header";
 import Footer from "./footer";
-import { announcement } from "../json-data/announcement";
+import { announcement,letter } from "../json-data/announcement";
 export default {
   data() {
     return {
-      announcementList: []
+      announcementList: [],
+     // content:""
     };
   },
   components: {
@@ -39,6 +42,12 @@ export default {
   },
   mounted() {
     this.announcementList = announcement;
+    // this.content = letter[this.$i18n.locale]
+  },
+  computed:{
+    content(){
+      return  letter[this.$i18n.locale]
+    }
   }
 };
 </script>

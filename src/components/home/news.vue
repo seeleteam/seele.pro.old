@@ -6,7 +6,7 @@
         <div class="news-item box-hover" v-for="(item, index) in newsList" :key="index" @click="clickNews(item.id)">
           <img class="news-img" :src="item.image">
           <div class="news-text">
-            <div class="news-title">{{item.title}}</div>
+            <div :class="['news-title', `news-${$i18n.locale}-title`]">{{item.title}}</div>
             <div class="news-info">
             <div class="fl news-date">{{item.published_at}}</div>
             <div class="fr news-read iconfont icon-jiantouyou-copy show-lg"></div>
@@ -86,7 +86,7 @@
         flex: 1;
         padding-bottom: 30px;
         margin-right: 40px;
-        height: 305px;
+        height: 320px;
         cursor: pointer;
         transition:all .3s linear 0s;
         &:nth-last-child(1) {
@@ -103,6 +103,11 @@
           margin-top: 20px;
           padding-right: 20px;
           text-align: left;
+          overflow: hidden;
+          height: 80px;
+          // &.news-cn-title{height: 52px;}
+          // &.news-en-title{height: 49px;}
+
         }
         .news-date, .news-title, .news-read {
           transition: all .3s linear;

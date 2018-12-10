@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="wrap clear">
-      <img src="../assets/imgs/logo.png" alt="logo" class="fl header-logo" @click="goHome">
+      <img src="../assets/imgs/logo.svg" alt="logo" class="fl header-logo" @click="goHome">
       <!-- <img src="../assets/imgs/logo_phone.png" alt="logo" class="fl header-logo show-sm" @click="goHome"> -->
       <div class="fl">
         <ul class="clear header-item-list">
